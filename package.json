@@ -1,0 +1,22 @@
+{
+  "name": "ah-rss-generator",
+  "version": "0.1.0",
+  "description": "RSS Generator for Angry Human",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lantrix/angryhuman-rss-generator.git"
+  },
+  "keywords": [
+    "RSS"
+  ],
+  "author": "Lantrix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lantrix/angryhuman-rss-generator/issues"
+  },
+  "homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme"
+}
