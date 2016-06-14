@@ -1,22 +1,26 @@
 {
-  "name": "ah-rss-generator",
-  "version": "0.1.0",
+  "name": "angryhuman-rss-generator",
+  "version": "0.0.0",
   "description": "RSS Generator for Angry Human",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lantrix/angryhuman-rss-generator.git"
+    "url": "git+ssh://git@github.com/lantrix/angryhuman-rss-generator.git"
   },
   "keywords": [
-    "RSS"
+    "npm"
   ],
-  "author": "Lantrix",
-  "license": "ISC",
+  "author": "Lantrix <lantrix@pobox.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lantrix/angryhuman-rss-generator/issues"
   },
-  "homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme"
+  "homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
 }
