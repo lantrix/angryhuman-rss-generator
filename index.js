@@ -12,7 +12,7 @@ var feed = new RSS({
     webMaster: "lantrix@pobox.com",
     copyright: "Copyright 2016 - Rockland World Radio",
     language: "en",
-    categories: ["Society &amp; Culture"],
+    categories: ["Philosophy"],
     pubDate: now(),
     ttl: "60",
     custom_namespaces: {
@@ -25,7 +25,7 @@ var feed = new RSS({
       {"itunes:image": {_attr: {href: "http://www.rocklandworldradio.com/imgs/programs/hosts/angry_human2.gif"}}},
       {"itunes:subtitle": "I'm mad as hell, and I'm not gonna take it anymore!"},
       {"itunes:summary": "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure. Host: David Biedny"},
-      {"itunes:category": [{_attr: {text: "Society &amp; Culture"}}]}
+      {"itunes:category": [{_attr: {text: "Philosophy"}}]}
     ]
 });
 
