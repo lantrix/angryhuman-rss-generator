@@ -1,6 +1,6 @@
 {
   "name": "angryhuman-rss-generator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "RSS Generator for Angry Human",
   "main": "index.js",
   "scripts": {
