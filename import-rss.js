@@ -2,12 +2,12 @@
 /*eslint-env node*/
 
 var Feed = require("rss-to-json");
-var fs = require("fs");
+var jsonfile = require("jsonfile");
 
+var file = "data/rssdata.json";
+ 
 Feed.load("http://microflapi.com/angryhuman/angryhuman.xml", function(err, rss){
-	fs.writeFile("data/rssdata.json", rss, function(err) {
-		if(err) {
-			return console.log(err);
-		}
+	jsonfile.writeFile(file, rss, function (jsonerr) {
+		console.error(jsonerr);
 	});
 });
