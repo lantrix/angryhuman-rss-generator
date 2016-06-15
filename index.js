@@ -1,10 +1,23 @@
 /*eslint no-undef: "error"*/
 /*eslint-env node*/
 
-var RSS = require("rss");
+var rss = require("rss");
+var fs = require("fs");
+var parser = require("rss-parser");
 
-// Create Angry Human RSS feed
-var feed = new RSS({
+var dataFile = "data/rssdata.json";
+var rssFeedFile = "/var/www/angryhuman/angryhuman.xml"
+
+// TODO: Load RSS Data
+
+// TODO: Retrieve Source RSS
+
+// TODO: Iterate over Source items and add to RSS Data
+
+// TODO: Save RSS Data
+
+// Create RSS feed Object
+var feed = new rss({
 	title: "Angry Human",
 	description: "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure.",
 	feed_url: "http://microflapi.com/angryhuman/angryhuman.xml",
@@ -32,8 +45,6 @@ var feed = new RSS({
 	]
 });
 
-// TODO: Retrieve Source RSS
-
 // loop over Source RSS data add to feed
 feed.item({
 	title:  "item title",
@@ -58,5 +69,5 @@ feed.item({
 	]
 });
 
-// Write XML out to disk for feedburner to pick up
+// TODO: Write XML out to disk for feedburner to pick up
 var xml = feed.xml();
