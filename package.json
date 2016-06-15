@@ -21,10 +21,10 @@
 	"homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme",
 	"devDependencies": {
 		"chai": "^3.5.0",
-		"mocha": "^2.5.3",
-		"rss-to-json": "latest"
+		"mocha": "^2.5.3"
 	},
 	"dependencies": {
-		"jsonfile": "latest"
+		"jsonfile": "*",
+		"rss-parser": "lantrix/rss-parser"
 	}
 }
