@@ -6,7 +6,7 @@ var fs = require("fs");
 var parser = require("rss-parser");
 
 var dataFile = "data/rssdata.json";
-var rssFeedFile = "/var/www/angryhuman/angryhuman.xml"
+var rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
 
 // TODO: Load RSS Data
 
