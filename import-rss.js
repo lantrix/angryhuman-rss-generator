@@ -8,8 +8,11 @@ var dataFile = "data/rssdata.json";
 var sourceRss = "http://microflapi.com/angryhuman/angryhuman-archive.xml";
 
 parser.parseURL(sourceRss, function(err, parsed) {
+	// jsonfile.writeFile(dataFile, parsed.feed.entries, function (err) {
+	// 	console.error(err);
+	// });
 	console.log(parsed.feed.title);
 	parsed.feed.entries.forEach(function(entry) {
-		console.log(entry);
+		console.log(entry.title + ":" + entry.link);
 	});
 });

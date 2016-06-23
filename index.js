@@ -1,16 +1,34 @@
 /*eslint no-undef: "error"*/
 /*eslint-env node*/
 
-var rss = require("rss");
-var fs = require("fs");
+// var sourceRss = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 var parser = require("rss-parser");
+var jsonfile = require("jsonfile");
 
 var dataFile = "data/rssdata.json";
+var sourceRss = "http://microflapi.com/angryhuman/angryhuman-archive.xml";
+
+parser.parseURL(sourceRss, function(err, parsed) {
+	// jsonfile.writeFile(dataFile, parsed.feed.entries, function (err) {
+	// 	console.error(err);
+	// });
+	console.log(parsed.feed.title);
+	parsed.feed.entries.forEach(function(entry) {
+		console.log(entry.title + ":" + entry.link);
+	});
+});
+
+var jsonfile = require("jsonfile");
+var rss = require("rss");
+
 var rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
 
-// TODO: Load RSS Data
 
-// TODO: Retrieve Source RSS
+// Load RSS Data
+// TODO: init data if no dataFile
+var rssData = jsonfile.readFileSync(dataFile);
+
+// Retrieve Source RSS
 
 // TODO: Iterate over Source items and add to RSS Data
 
@@ -29,7 +47,7 @@ var feed = new rss({
 	copyright: "Copyright 2016 - Rockland World Radio",
 	language: "en",
 	categories: ["Philosophy"],
-	pubDate: now(),
+	pubDate: Date.now(),
 	ttl: "60",
 	custom_namespaces: {
 		"itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd"
@@ -58,14 +76,8 @@ feed.item({
 	long: -111.933231, //optional longitude field for GeoRSS
 	enclosure: {url:"...", file:"path-to-file"}, // optional enclosure
 	custom_elements: [
-		{"itunes:author": "John Doe"},
-		{"itunes:subtitle": "A short primer on table spices"},
-		{"itunes:image": {
-			_attr: {
-				href: "http://example.com/podcasts/everything/AllAboutEverything/Episode1.jpg"
-			}
-		}},
-		{"itunes:duration": "7:04"}
+		{"itunes:explicit": "Yes"},
+		{"itunes:duration": "1:00"}
 	]
 });
 

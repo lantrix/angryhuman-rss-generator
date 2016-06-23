@@ -25,6 +25,7 @@
 	},
 	"dependencies": {
 		"jsonfile": "*",
-		"rss-parser": "lantrix/rss-parser"
+		"rss-parser": "lantrix/rss-parser",
+		"rss": "*"
 	}
 }
