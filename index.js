@@ -42,7 +42,7 @@ let feed = new rss({
 	webMaster: "lantrix@pobox.com (Lantrix)",
 	copyright: "Copyright 2016 - Rockland World Radio",
 	language: "en",
-	categories: ["Society &amp; Culture"],
+	categories: ["Society & Culture"],
 	pubDate: Date.now(),
 	ttl: "60",
 	custom_namespaces: {
@@ -55,7 +55,7 @@ let feed = new rss({
 		{"itunes:image": {_attr: {href: "http://www.rocklandworldradio.com/imgs/programs/hosts/angry_human2.gif"}}},
 		{"itunes:subtitle": "I'm mad as hell, and I'm not gonna take it anymore!"},
 		{"itunes:summary": "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure. Host: David Biedny"},
-		{"itunes:category": [{_attr: {text: "Society &amp; Culture"}}]}
+		{"itunes:category": [{_attr: {text: "Society & Culture"}}]}
 	]
 });
 
@@ -78,7 +78,7 @@ feed.item({
 
 // Write XML out to disk for feedburner to pick up
 let xml = feed.xml({indent: true});
-let buffer = new Buffer(feed.xml());
+let buffer = new Buffer(xml);
 fs.open(rssFeedFile, 'w', function(err, fd) {
     if (err) {
         throw 'error opening file: ' + err;
