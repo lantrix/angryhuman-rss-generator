@@ -1,52 +1,48 @@
-/*eslint no-undef: "error"*/
 /*eslint-env node*/
+"use strict";
 
-// var sourceRss = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 var parser = require("rss-parser");
 var jsonfile = require("jsonfile");
+var rss = require("rss");
+var fs = require("fs");
 
-var dataFile = "data/rssdata.json";
-var sourceRss = "http://microflapi.com/angryhuman/angryhuman-archive.xml";
+var sourceRss = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
-parser.parseURL(sourceRss, function(err, parsed) {
-	// jsonfile.writeFile(dataFile, parsed.feed.entries, function (err) {
-	// 	console.error(err);
-	// });
-	console.log(parsed.feed.title);
-	parsed.feed.entries.forEach(function(entry) {
-		console.log(entry.title + ":" + entry.link);
-	});
+let dataFile = "data/rssdata.json";
+
+let rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
+
+// Load existing RSS Data
+fs.exists(dataFile, function(exists) {
+    if (exists) {
+    	var rssData = jsonfile.readFileSync(dataFile);
+    } else {
+		// TODO: create file if not exists.
+		// jsonfile.writeFile(dataFile, "[{}]", function (err) {
+		// 	console.error(err);
+		// });
+	}
 });
 
-var jsonfile = require("jsonfile");
-var rss = require("rss");
-
-var rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
-
-
-// Load RSS Data
-// TODO: init data if no dataFile
-var rssData = jsonfile.readFileSync(dataFile);
-
 // Retrieve Source RSS
-
-// TODO: Iterate over Source items and add to RSS Data
-
-// TODO: Save RSS Data
+let sourceRssData = [];
+parser.parseURL(sourceRss, function(err, parsed) {
+	sourceRssData = parsed.feed;
+});
 
 // Create RSS feed Object
-var feed = new rss({
+let feed = new rss({
 	title: "Angry Human",
 	description: "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure.",
 	feed_url: "http://microflapi.com/angryhuman/angryhuman.xml",
 	site_url: "http://www.rocklandworldradio.com/program/angryhuman",
 	image_url: "http://example.com/icon.png",
 	docs: "http://blogs.law.harvard.edu/tech/rss",
-	managingEditor: "angryhuman@gmail.com",
-	webMaster: "lantrix@pobox.com",
+	managingEditor: "angryhuman@gmail.com (David Biedny)",
+	webMaster: "lantrix@pobox.com (Lantrix)",
 	copyright: "Copyright 2016 - Rockland World Radio",
 	language: "en",
-	categories: ["Philosophy"],
+	categories: ["Society &amp; Culture"],
 	pubDate: Date.now(),
 	ttl: "60",
 	custom_namespaces: {
@@ -59,27 +55,44 @@ var feed = new rss({
 		{"itunes:image": {_attr: {href: "http://www.rocklandworldradio.com/imgs/programs/hosts/angry_human2.gif"}}},
 		{"itunes:subtitle": "I'm mad as hell, and I'm not gonna take it anymore!"},
 		{"itunes:summary": "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure. Host: David Biedny"},
-		{"itunes:category": [{_attr: {text: "Philosophy"}}]}
+		{"itunes:category": [{_attr: {text: "Society &amp; Culture"}}]}
 	]
 });
 
-// loop over Source RSS data add to feed
+// TODO: Iterate over Source items and add to RSS Data
 feed.item({
 	title:  "item title",
 	description: "use this for the content. It can include html.",
-	url: "http://example.com/article4?this&that", // link to the item
 	guid: "1123", // optional - defaults to url
-	categories: ["Category 1","Category 2","Category 3","Category 4"], // optional - array of item categories
-	author: "Guest Author", // optional - defaults to feed author property
 	date: "May 27, 2012", // any format that js Date can parse.
-	lat: 33.417974, //optional latitude field for GeoRSS
-	long: -111.933231, //optional longitude field for GeoRSS
-	enclosure: {url:"...", file:"path-to-file"}, // optional enclosure
+	enclosure: {
+            "size": "71548865",
+            "type": "application/octet-stream",
+            "url": "http://www.mediafire.com/download/wm3wzzw10243aas/ar_ah_07-29-15.mp3"
+        }, // optional enclosure
 	custom_elements: [
 		{"itunes:explicit": "Yes"},
 		{"itunes:duration": "1:00"}
 	]
 });
 
-// TODO: Write XML out to disk for feedburner to pick up
-var xml = feed.xml();
+// Write XML out to disk for feedburner to pick up
+let xml = feed.xml({indent: true});
+let buffer = new Buffer(feed.xml());
+fs.open(rssFeedFile, 'w', function(err, fd) {
+    if (err) {
+        throw 'error opening file: ' + err;
+    }
+    fs.write(fd, buffer, 0, buffer.length, null, function(err) {
+        if (err) throw 'error writing file: ' + err;
+        fs.close(fd, function() {
+            console.log('file written');
+        })
+    });
+});
+fs.writeFile(rssFeedFile, xml, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+});
