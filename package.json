@@ -26,6 +26,7 @@
 	"dependencies": {
 		"jsonfile": "*",
 		"rss-parser": "*",
-		"rss": "*"
+		"rss": "*",
+		"bluebird": "*"
 	}
 }
