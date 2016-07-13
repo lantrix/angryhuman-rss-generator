@@ -1,29 +1,17 @@
 /*eslint-env node*/
 "use strict";
 
-var Promise = require("bluebird");
-var parser = Promise.promisify(require("rss-parser").parseURL);;
-var jsonfile = require("jsonfile");
-var rss = require("rss");
-var fs = require("fs");
+let Promise = require("bluebird");
+let parser = Promise.promisify(require("rss-parser").parseURL);;
+let jsonfile = require("jsonfile");
+let rss = require("rss");
+let fs = require("fs");
 
 var sourceRss = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
 let dataFile = "data/rssdata.json";
 
 let rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
-
-// Load existing RSS Data Synchronously
-fs.exists(dataFile, function(exists) {
-    if (exists) {
-    	var rssData = jsonfile.readFileSync(dataFile);
-    } else {
-		// TODO: create file if not exists.
-		// jsonfile.writeFile(dataFile, "[{}]", function (err) {
-		// 	console.error(err);
-		// });
-	}
-});
 
 // Create RSS feed Object
 let feed = new rss({
@@ -58,9 +46,22 @@ let feed = new rss({
 parser(sourceRss).then(function(contents) {
     return eval(contents);
 }).then(function(result) {
+	// TODO: create file if not exists.
+	var rssData = jsonfile.readFileSync(dataFile);
+	let itemsToAdd = [];
+	// TODO: see if entry already exists in rssData if so skip
+	result.feed.entries.forEach(function(newRssItem) {
+		if ( newRssItem.guid !== null ) {
+			console.log("TODO: Create New Guid from timestamp to compare to existing (see if to add)");
+		} else {
+			console.log("New Item Guid: " + newRssItem.guid);
+		}
+		rssData.forEach(function(existingRssItem) {
+			console.log(existingRssItem.guid);
+		});
+	});	
 	// Iterate over Source items and add to RSS Data
 	result.feed.entries.forEach(function(entry) {
-		// TODO: see if entry already exists in rssData if so skip
 		feed.item({
 			title:  entry.contentSnippet,
 			description: entry.description,
