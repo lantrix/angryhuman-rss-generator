@@ -2,12 +2,12 @@
 "use strict";
 
 let Promise = require("bluebird");
-let parser = Promise.promisify(require("rss-parser").parseURL);;
-let jsonfile = require("jsonfile");
+let parser = Promise.promisify(require("rss-parser").parseURL);
+let jsonfile = Promise.promisifyAll(require("jsonfile"));
 let rss = require("rss");
 let fs = require("fs");
 
-var sourceRss = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
+var sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
 let dataFile = "data/rssdata.json";
 
@@ -42,12 +42,15 @@ let feed = new rss({
 	]
 });
 
+// Retrieve Local RSS Data
+// TODO: create file if not exists
+let rssData = jsonfile.readFileAsync(dataFile);
+
 // Retrieve Source RSS
-parser(sourceRss).then(function(contents) {
-    return eval(contents);
-}).then(function(result) {
-	// TODO: create file if not exists.
-	var rssData = jsonfile.readFileSync(dataFile);
+let sourceRss = parser(sourceRssUri);
+
+Promise.all([rssData(), sourceRss()]).then(function(result) {
+    //result is an array contains the values of the three fulfilled promises.
 	let itemsToAdd = [];
 	// TODO: see if entry already exists in rssData if so skip
 	result.feed.entries.forEach(function(newRssItem) {
