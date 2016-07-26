@@ -49,31 +49,39 @@ let rssData = jsonfile.readFileAsync(dataFile);
 // Retrieve Source RSS
 let sourceRss = parser(sourceRssUri);
 
-Promise.all([rssData(), sourceRss()]).then(function(result) {
-    //result is an array contains the values of the three fulfilled promises.
+Promise.all([sourceRss, rssData]).then(function(result) {
+    //result is an array contains the objects of the fulfilled promises.
 	let itemsToAdd = [];
+	let sourceRss = result[0];
+	let rssData = result[1];
+
 	// TODO: see if entry already exists in rssData if so skip
-	result.feed.entries.forEach(function(newRssItem) {
+	sourceRss.feed.entries.forEach(function(newRssItem) {
+		let guidToCompare = "";
 		if ( newRssItem.guid !== null ) {
-			console.log("TODO: Create New Guid from timestamp to compare to existing (see if to add)");
+			console.log("Create New Guid");
+			// guidToCompare = ??
 		} else {
-			console.log("New Item Guid: " + newRssItem.guid);
+			guidToCompare = newRssItem.guid;
 		}
 		rssData.forEach(function(existingRssItem) {
-			console.log(existingRssItem.guid);
+			if (existingRssItem.guid == guidToCompare) {
+				itemsToAdd.push(existingRssItem);
+			}
 		});
 	});	
+
 	// Iterate over Source items and add to RSS Data
-	result.feed.entries.forEach(function(entry) {
+	itemsToAdd.entries.forEach(function(entryToAdd) {
 		feed.item({
-			title:  entry.contentSnippet,
-			description: entry.description,
+			title:  entryToAdd.contentSnippet,
+			description: entryToAdd.description,
 			//guid: "", TODO: Generate GUID
-			date: entry.pubDate,
+			date: entryToAdd.pubDate,
 			enclosure: {
 				// "size": "71548865" - TODO: get header length of file
 				"type": "application/octet-stream",
-				"url": entry.link
+				"url": entryToAdd.link
 			},
 			custom_elements: [
 				{"itunes:explicit": "Yes"},
@@ -81,6 +89,7 @@ Promise.all([rssData(), sourceRss()]).then(function(result) {
 			]
 		});
 	});
+	
 	// Write XML out to disk for feedburner to pick up
 	let xml = feed.xml({indent: true});
 	let buffer = new Buffer(xml);
@@ -107,4 +116,3 @@ Promise.all([rssData(), sourceRss()]).then(function(result) {
 }).catch(function(e) {
     console.log("Catch: ", e);
 });
-
