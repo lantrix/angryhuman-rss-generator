@@ -92,11 +92,11 @@ Promise.all([sourceRss, rssData]).then(function(result) {
 	});	
 
 	// Iterate over Source items and add to RSS Data
-	itemsToAdd.entries.forEach(function(entryToAdd) {
+	itemsToAdd.forEach(function(entryToAdd) {
 		feed.item({
 			title:  entryToAdd.contentSnippet,
 			description: entryToAdd.description,
-			//guid: "", TODO: Generate GUID
+			guid: entryToAdd.guid,
 			date: entryToAdd.pubDate,
 			enclosure: {
 				// "size": "71548865" - TODO: get header length of file
