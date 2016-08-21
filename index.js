@@ -7,6 +7,16 @@ var jsonfile = Promise.promisifyAll(require("jsonfile"));
 var rss = require("rss");
 var fs = require("fs");
 
+Date.prototype.getMonthFormatted = function() {
+  var month = this.getMonth() + 1;
+  return month < 10 ? '0' + month : '' + month; // ('' + month) for string result
+}
+
+Date.prototype.getDayFormatted = function() {
+  var day = this.getDate();
+  return day < 10 ? '0' + day : '' + day; // ('' + day) for string result
+}
+
 const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
 const dataFile = "data/rssdata.json";
@@ -58,8 +68,17 @@ Promise.all([sourceRss, rssData]).then(function(result) {
 	// TODO: see if entry already exists in rssData if so skip
 	sourceRss.feed.entries.forEach(function(newRssItem) {
 		if ( newRssItem.guid !== null ) {
-			console.log("Create New Guid");
-			// guidToCompare = ??
+			// console.log("Create New Guid");
+			var date = new Date(newRssItem.pubDate);
+			//example: "AngryHuman-2012-06-19-22-00-00"
+			newRssItem.guid = "AngryHuman-" + date.getFullYear() 
+					+ "-" + date.getMonthFormatted()
+					+ "-" + date.getDayFormatted()
+					+ "-" + date.getUTCHours()
+					+ "-" + date.getMinutes()
+					+ "-" + date.getSeconds(); 
+			// console.log(newRssItem.pubDate);
+			// console.log(newRssItem.guid);
 		}
 		let skip = false
 		rssData.forEach(function(existingRssItem) {
