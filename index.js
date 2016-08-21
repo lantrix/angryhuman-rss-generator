@@ -1,20 +1,20 @@
 /*eslint-env node*/
 "use strict";
 
-let Promise = require("bluebird");
-let parser = Promise.promisify(require("rss-parser").parseURL);
-let jsonfile = Promise.promisifyAll(require("jsonfile"));
-let rss = require("rss");
-let fs = require("fs");
+var Promise = require("bluebird");
+var parser = Promise.promisify(require("rss-parser").parseURL);
+var jsonfile = Promise.promisifyAll(require("jsonfile"));
+var rss = require("rss");
+var fs = require("fs");
 
-var sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
+const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
-let dataFile = "data/rssdata.json";
+const dataFile = "data/rssdata.json";
 
-let rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
+const rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
 
 // Create RSS feed Object
-let feed = new rss({
+const feed = new rss({
 	title: "Angry Human",
 	description: "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure.",
 	feed_url: "http://microflapi.com/angryhuman/angryhuman.xml",
@@ -44,31 +44,32 @@ let feed = new rss({
 
 // Retrieve Local RSS Data
 // TODO: create file if not exists
-let rssData = jsonfile.readFileAsync(dataFile);
+var rssData = jsonfile.readFileAsync(dataFile);
 
 // Retrieve Source RSS
-let sourceRss = parser(sourceRssUri);
+var sourceRss = parser(sourceRssUri);
 
 Promise.all([sourceRss, rssData]).then(function(result) {
     //result is an array contains the objects of the fulfilled promises.
 	let itemsToAdd = [];
-	let sourceRss = result[0];
-	let rssData = result[1];
+	const sourceRss = result[0];
+	const rssData = result[1];
 
 	// TODO: see if entry already exists in rssData if so skip
 	sourceRss.feed.entries.forEach(function(newRssItem) {
-		let guidToCompare = "";
 		if ( newRssItem.guid !== null ) {
 			console.log("Create New Guid");
 			// guidToCompare = ??
-		} else {
-			guidToCompare = newRssItem.guid;
 		}
+		let skip = false
 		rssData.forEach(function(existingRssItem) {
-			if (existingRssItem.guid == guidToCompare) {
-				itemsToAdd.push(existingRssItem);
+			if (existingRssItem.guid == newRssItem.guid) {
+				skip = true;
 			}
-		});
+		});	
+		if (!skip) {
+			itemsToAdd.push(newRssItem);
+		}
 	});	
 
 	// Iterate over Source items and add to RSS Data
