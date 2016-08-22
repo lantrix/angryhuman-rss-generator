@@ -1,11 +1,11 @@
 /*eslint-env node*/
 "use strict";
 
-var Promise = require("bluebird");
-var parser = Promise.promisify(require("rss-parser").parseURL);
-var jsonfile = Promise.promisifyAll(require("jsonfile"));
-var rss = require("rss");
-var fs = require("fs");
+const Promise = require("bluebird");
+const parser = Promise.promisify(require("rss-parser").parseURL);
+const jsonfile = Promise.promisifyAll(require("jsonfile"));
+const rss = require("rss");
+const fs = require("fs");
 
 Date.prototype.getMonthFormatted = function() {
   var month = this.getMonth() + 1;
@@ -20,11 +20,13 @@ Date.prototype.getDayFormatted = function() {
 const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
 const dataFile = "data/rssdata.json";
+const dataOutFile = "data/rssdata-out.json";
 
-const rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
+//const rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
+const rssFeedFile = "data/angryhuman.xml";
 
 // Create RSS feed Object
-const feed = new rss({
+var feed = new rss({
 	title: "Angry Human",
 	description: "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure.",
 	feed_url: "http://microflapi.com/angryhuman/angryhuman.xml",
@@ -93,7 +95,7 @@ Promise.all([sourceRss, rssData]).then(function(result) {
 			itemsToAdd.push(newRssItem);
 		}
 	});	
-
+	
 	// Iterate over Source items and add to RSS Data
 	itemsToAdd.forEach(function(entryToAdd) {
 		feed.item({
@@ -112,28 +114,39 @@ Promise.all([sourceRss, rssData]).then(function(result) {
 			]
 		});
 	});
-	
-	// Write XML out to disk for feedburner to pick up
-	let xml = feed.xml({indent: true});
-	let buffer = new Buffer(xml);
-	fs.open(rssFeedFile, 'w', function(err, fd) {
-		if (err) {
-			throw 'error opening file: ' + err;
-		}
-		fs.write(fd, buffer, 0, buffer.length, null, function(err) {
-			if (err) throw 'error writing file: ' + err;
-			fs.close(fd, function() {
-				console.log('file written');
-			})
+}).then(
+	// Save out Local RSS Data
+	jsonfile.writeFileAsync(dataOutFile, feed.entries).then(function(result){
+		// Write XML out to disk for feedburner to pick up
+		let xml = feed.xml({indent: true});
+		let buffer = new Buffer(xml);
+		fs.open(rssFeedFile, 'w', function(err, fd) {
+			if (err) {
+				throw 'error opening file: ' + err;
+			}
+			fs.write(fd, buffer, 0, buffer.length, null, function(err) {
+				if (err) throw 'error writing file: ' + err;
+				fs.close(fd, function() {
+					console.log('file written');
+				})
+			});
 		});
-	});
-	fs.writeFile(rssFeedFile, xml, function(err) {
-		if(err) {
-			return console.log(err);
-		}
-		console.log("The file was saved!");
-	});
-}).catch(SyntaxError, function(e) {
+		fs.writeFile(rssFeedFile, xml, function(err) {
+			if(err) {
+				return console.log(err);
+			}
+			console.log("The file was saved!");
+		});
+	})
+	.catch(SyntaxError, function(e) {
+		console.log("Error: ", e);
+	})
+	.catch(function(e) {
+		//Catch any other error
+		console.log("Catch: ", e);
+	})
+)
+.catch(SyntaxError, function(e) {
     console.log("Error: ", e);
 //Catch any other error
 }).catch(function(e) {
