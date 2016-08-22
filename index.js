@@ -65,8 +65,8 @@ Promise.all([sourceRss, rssData]).then(function(result) {
 	const sourceRss = result[0];
 	const rssData = result[1];
 
-	// TODO: see if entry already exists in rssData if so skip
 	sourceRss.feed.entries.forEach(function(newRssItem) {
+		// Iterate through all the new RSS entries
 		if ( newRssItem.guid !== null ) {
 			// console.log("Create New Guid");
 			var date = new Date(newRssItem.pubDate);
@@ -82,11 +82,14 @@ Promise.all([sourceRss, rssData]).then(function(result) {
 		}
 		let skip = false
 		rssData.forEach(function(existingRssItem) {
+			// Iterate through all the existing RSS entries from our source data
 			if (existingRssItem.guid == newRssItem.guid) {
+				// See if entry afrom sourceRss lready exists in rssData if so skip
 				skip = true;
 			}
 		});	
 		if (!skip) {
+			// No match for this newRssItem in the existing entry - Add to list to publish
 			itemsToAdd.push(newRssItem);
 		}
 	});	
