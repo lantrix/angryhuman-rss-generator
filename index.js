@@ -1,6 +1,7 @@
 /*eslint-env node*/
 "use strict";
 
+const aws = require("aws-sdk");
 const Promise = require("bluebird");
 const parser = Promise.promisify(require("rss-parser").parseURL);
 const jsonfile = Promise.promisifyAll(require("jsonfile"));
@@ -8,14 +9,14 @@ const rss = require("rss");
 const fs = require("fs");
 
 Date.prototype.getMonthFormatted = function() {
-  var month = this.getMonth() + 1;
-  return month < 10 ? '0' + month : '' + month; // ('' + month) for string result
-}
+	var month = this.getMonth() + 1;
+	return month < 10 ? "0" + month : "" + month; // ("" + month) for string result
+};
 
 Date.prototype.getDayFormatted = function() {
-  var day = this.getDate();
-  return day < 10 ? '0' + day : '' + day; // ('' + day) for string result
-}
+	var day = this.getDate();
+	return day < 10 ? "0" + day : "" + day; // ("" + day) for string result
+};
 
 const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
 
