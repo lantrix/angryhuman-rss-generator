@@ -46,7 +46,7 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.generate
 
 #    you can add any of the following events
 #    events:

@@ -59,7 +59,7 @@ function instantiateFeedObject() {
 }
 
 // Entrypoint for AWS Lambda
-module.exports.hello = (event, context, cb) => cb(null, {
+module.exports.generate = (event, context, cb) => cb(null, {
 	// Retrieve Local RSS Data
 	// TODO: create file if not exists
 	var rssData = jsonfile.readFileAsync(dataFile);
@@ -161,5 +161,4 @@ module.exports.hello = (event, context, cb) => cb(null, {
 	}).catch(function(e) {
 		console.log("Catch: ", e);
 	});
-
 });
