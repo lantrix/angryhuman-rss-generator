@@ -62,7 +62,7 @@ function instantiateFeedObject() {
 }
 
 // Entrypoint for AWS Lambda
-module.exports.generate = (event, context, cb) => cb(null, {
+module.exports.generaterss = (event, context, cb) => cb(null, {
 	// Retrieve Local RSS Data
 	// TODO: create file if not exists
 	var rssData = jsonfile.readFileAsync(dataFile);

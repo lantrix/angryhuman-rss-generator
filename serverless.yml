@@ -45,8 +45,8 @@ provider:
 #  artifact: my-service-code.zip
 
 functions:
-  hello:
-    handler: handler.generate
+  generaterss:
+    handler: handler.generaterss
 
 #    you can add any of the following events
 #    events:
