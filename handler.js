@@ -1,4 +1,7 @@
 /*eslint-env node*/
+/*jshint esversion: 6 */
+/*jshint node: true */
+
 "use strict";
 
 const aws = require("aws-sdk");

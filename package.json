@@ -10,9 +10,7 @@
 		"type": "git",
 		"url": "git+ssh://git@github.com/lantrix/angryhuman-rss-generator.git"
 	},
-	"keywords": [
-		"npm"
-	],
+	"keywords": ["npm"],
 	"author": "Lantrix <lantrix@pobox.com>",
 	"license": "MIT",
 	"bugs": {
@@ -21,7 +19,7 @@
 	"homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme",
 	"devDependencies": {
 		"chai": "^3.5.0",
-		"mocha": "^2.5.3"
+		"mocha": "^3.0.2"
 	},
 	"dependencies": {
 		"jsonfile": "*",
