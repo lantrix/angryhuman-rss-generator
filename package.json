@@ -1,30 +1,35 @@
 {
-	"name": "angryhuman-rss-generator",
-	"version": "0.1.0",
-	"description": "RSS Generator for Angry Human",
-	"main": "index.js",
-	"scripts": {
-		"test": "make test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/lantrix/angryhuman-rss-generator.git"
-	},
-	"keywords": ["npm"],
-	"author": "Lantrix <lantrix@pobox.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/lantrix/angryhuman-rss-generator/issues"
-	},
-	"homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme",
-	"devDependencies": {
-		"chai": "^3.5.0",
-		"mocha": "^3.0.2"
-	},
-	"dependencies": {
-		"jsonfile": "*",
-		"rss-parser": "*",
-		"rss": "*",
-		"bluebird": "*"
-	}
+  "name": "angryhuman-rss-generator",
+  "version": "0.1.0",
+  "description": "RSS Generator for Angry Human",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lantrix/angryhuman-rss-generator.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Lantrix <lantrix@pobox.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lantrix/angryhuman-rss-generator/issues"
+  },
+  "homepage": "https://github.com/lantrix/angryhuman-rss-generator#readme",
+  "devDependencies": {
+    "aws-lambda-mock-context": "*",
+    "aws-sdk-mock": "^1.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "jsonfile": "*",
+    "rss-parser": "*",
+    "rss": "*",
+    "bluebird": "*"
+  }
 }

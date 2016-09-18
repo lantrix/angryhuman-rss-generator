@@ -2,12 +2,10 @@
 /*jshint esversion: 6 */
 /*jshint node: true */
 
-"use strict";
-
 const aws = require("aws-sdk");
-const Promise = require("bluebird");
-const parser = Promise.promisify(require("rss-parser").parseURL);
-const jsonfile = Promise.promisifyAll(require("jsonfile"));
+const bbpromise = require("bluebird");
+const parser = bbpromise.promisify(require("rss-parser").parseURL);
+const jsonfile = bbpromise.promisifyAll(require("jsonfile"));
 const rss = require("rss");
 const fs = require("fs");
 
@@ -30,6 +28,7 @@ const dataOutFile = "data/rssdata-out.json";
 const rssFeedFile = "data/angryhuman.xml";
 
 function instantiateFeedObject() {
+	"use strict";
 	// Create RSS feed Object
 	var feed = new rss({
 		title: "Angry Human",
@@ -61,8 +60,19 @@ function instantiateFeedObject() {
 	return feed;
 }
 
+exports.handler = function(event, cb) {
+
+  var response = {
+    message: "Your Serverless function ran successfully!"
+  };
+
+  return cb(null, response);
+};
+
+
 // Entrypoint for AWS Lambda
 module.exports.generaterss = (event, context, cb) => cb(null, {
+	"use strict";
 	// Retrieve Local RSS Data
 	// TODO: create file if not exists
 	var rssData = jsonfile.readFileAsync(dataFile);
@@ -73,7 +83,7 @@ module.exports.generaterss = (event, context, cb) => cb(null, {
 	// Retrieve Source RSS
 	var sourceRss = parser(sourceRssUri);
 
-	Promise.all([sourceRss, rssData]).then(function(result) {
+	bbpromise.all([sourceRss, rssData]).then(function(result) {
 		//result is an array contains the objects of the fulfilled promises.
 		let itemsToAdd = [];
 		const sourceRss = result[0];

@@ -58,12 +58,15 @@ functions:
 #      - sns: greeter-topic
 
 # you can add CloudFormation resource templates here
-#resources:
-#  Resources:
-#    NewResource:
-#      Type: AWS::S3::Bucket
-#      Properties:
-#        BucketName: my-new-bucket
+resources:
+  Resources:
+    DataBucket:
+      Type: AWS::S3::Bucket
+       Properties:
+         # You can also set properties for the resource, based on the CloudFormation properties
+         BucketName: angryhuman
+         # Or you could reference an environment variable
+         # BucketName: ${env.BUCKET_NAME}
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"
