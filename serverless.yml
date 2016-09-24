@@ -1,73 +1,21 @@
-# Welcome to Serverless!
-#
-# This file is the main config file for your service.
-# It's very minimal at this point and uses default values.
-# You can always add more config options for more control.
-# We've included some commented out config examples here.
-# Just uncomment any of them to get that config option.
-#
-# For full config options, check the docs:
-#    docs.serverless.com
-#
-# Happy Coding!
+# This file is the main config file for your Serverless lambda.
 
 service: angryhuman-rss-generator
 
 provider:
   name: aws
   runtime: nodejs4.3
-# you can add statements to the Lambda function's IAM Role here
-#  iamRoleStatements:
-#    - Effect: "Allow"
-#      Action:
-#        - "s3:ListBucket"
-#      Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "ServerlessDeploymentBucket" } ] ]  }
-#    - Effect: "Allow"
-#      Action:
-#        - "s3:PutObject"
-#      Resource:
-#        Fn::Join:
-#          - ""
-#          - - "arn:aws:s3:::"
-#            - "Ref" : "ServerlessDeploymentBucket"
-
-# you can overwrite defaults here
-#defaults:
-#  stage: dev
-#  region: us-east-1
-
-# you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#  exclude:
-#    - exclude-me.js
-#  artifact: my-service-code.zip
 
 functions:
-  generaterss:
-    handler: handler.generaterss
+ 	generaterss:
+		handler: handler.generaterss
 
-#    you can add any of the following events
-#    events:
-#      - http:
-#          path: users/create
-#          method: get
-#      - s3: ${env.BUCKET}
-#      - schedule: rate(10 minutes)
-#      - sns: greeter-topic
+	events:
+		- schedule: rate(60 minutes)
 
-# you can add CloudFormation resource templates here
 resources:
   Resources:
     DataBucket:
       Type: AWS::S3::Bucket
-       Properties:
-         # You can also set properties for the resource, based on the CloudFormation properties
-         BucketName: angryhuman
-         # Or you could reference an environment variable
-         # BucketName: ${env.BUCKET_NAME}
-#  Outputs:
-#     NewOutput:
-#       Description: "Description for the output"
-#       Value: "Some output value"
+				Properties:
+					BucketName: angryhumanrss
