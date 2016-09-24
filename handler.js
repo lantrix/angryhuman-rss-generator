@@ -6,8 +6,12 @@ const aws = require("aws-sdk");
 const bbpromise = require("bluebird");
 const parser = bbpromise.promisify(require("rss-parser").parseURL);
 const jsonfile = bbpromise.promisifyAll(require("jsonfile"));
-const rss = require("rss");
+const rss = require("rss"); // used by functions in lib
 const fs = require("fs");
+const AWS = require("aws-sdk");
+
+// Require Logic
+var lib = require("./lib/rss.js");
 
 Date.prototype.getMonthFormatted = function() {
 	var month = this.getMonth() + 1;
@@ -20,65 +24,20 @@ Date.prototype.getDayFormatted = function() {
 };
 
 const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
-
 const dataFile = "data/rssdata.json";
 const dataOutFile = "data/rssdata-out.json";
-
 //const rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
 const rssFeedFile = "data/angryhuman.xml";
 
-function instantiateFeedObject() {
-	"use strict";
-	// Create RSS feed Object
-	var feed = new rss({
-		title: "Angry Human",
-		description: "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure.",
-		feed_url: "http://microflapi.com/angryhuman/angryhuman.xml",
-		site_url: "http://www.rocklandworldradio.com/program/angryhuman",
-		image_url: "http://example.com/icon.png",
-		docs: "http://blogs.law.harvard.edu/tech/rss",
-		managingEditor: "angryhuman@gmail.com (David Biedny)",
-		webMaster: "lantrix@pobox.com (Lantrix)",
-		copyright: "Copyright 2016 - Rockland World Radio",
-		language: "en",
-		categories: ["Society & Culture"],
-		pubDate: Date.now(),
-		ttl: "60",
-		custom_namespaces: {
-			"itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd"
-		},
-		custom_elements: [
-			{"itunes:explicit": "Yes"},
-			{"itunes:owner": [{"itunes:name": "Lantrix"}, {"itunes:email": "lantrix@pobox.com"}]},
-			{"itunes:author": "David Biedny"},
-			{"itunes:image": {_attr: {href: "http://www.rocklandworldradio.com/imgs/programs/hosts/angry_human2.gif"}}},
-			{"itunes:subtitle": "I'm mad as hell, and I'm not gonna take it anymore!"},
-			{"itunes:summary": "David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure. Host: David Biedny"},
-			{"itunes:category": [{_attr: {text: "Society & Culture"}}]}
-		]
-	});
-	return feed;
-}
-
-exports.handler = function(event, cb) {
-
-  var response = {
-    message: "Your Serverless function ran successfully!"
-  };
-
-  return cb(null, response);
-};
-
-
 // Entrypoint for AWS Lambda
-module.exports.generaterss = (event, context, cb) => cb(null, {
+module.exports.generaterss = function() {
 	"use strict";
 	// Retrieve Local RSS Data
 	// TODO: create file if not exists
 	var rssData = jsonfile.readFileAsync(dataFile);
 
 	// Create new RSS feed everytime
-	var feed = instantiateFeedObject();
+	var feed = lib.instantiateFeedObject();
 
 	// Retrieve Source RSS
 	var sourceRss = parser(sourceRssUri);
@@ -95,12 +54,12 @@ module.exports.generaterss = (event, context, cb) => cb(null, {
 				// console.log("Create New Guid");
 				var date = new Date(newRssItem.pubDate);
 				//example: "AngryHuman-2012-06-19-22-00-00"
-				newRssItem.guid = "AngryHuman-" + date.getFullYear() 
+				newRssItem.guid = "AngryHuman-" + date.getFullYear()
 						+ "-" + date.getMonthFormatted()
 						+ "-" + date.getDayFormatted()
 						+ "-" + date.getUTCHours()
 						+ "-" + date.getMinutes()
-						+ "-" + date.getSeconds(); 
+						+ "-" + date.getSeconds();
 				// console.log(newRssItem.pubDate);
 				// console.log(newRssItem.guid);
 			}
@@ -111,13 +70,13 @@ module.exports.generaterss = (event, context, cb) => cb(null, {
 					// See if entry afrom sourceRss lready exists in rssData if so skip
 					skip = true;
 				}
-			});	
+			});
 			if (!skip) {
 				// No match for this newRssItem in the existing entry - Add to list to publish
 				itemsToAdd.push(newRssItem);
 			}
-		});	
-		
+		});
+
 		// Iterate over Source items and add to RSS Data
 		itemsToAdd.forEach(function(entryToAdd) {
 			feed.item({
@@ -174,4 +133,4 @@ module.exports.generaterss = (event, context, cb) => cb(null, {
 	}).catch(function(e) {
 		console.log("Catch: ", e);
 	});
-});
+};

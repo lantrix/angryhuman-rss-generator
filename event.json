@@ -1,5 +1,12 @@
-{
-  "key3": "value3",
-  "key2": "value2",
-  "key1": "value1"
-}
+scheduledEvent = [{
+    "account": "123456789012",
+    "region": "us-east-1",
+    "detail": {},
+    "detailt-type": "Scheduled Event",
+    "source": "aws.events",
+    "time": "2016-09-09T00:00:00Z",
+    "id": "000aaa00-00aa-00aa-00aa-000aaa000aaa",
+    "resources": [
+    	"arn:aws:events:us-east-1:123456789012:rule/my-schedule"
+    ]
+}]
