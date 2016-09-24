@@ -1,52 +1,43 @@
+// Testing requirements
 var chai = require("chai");
 var expect = chai.expect;
 var assert = chai.assert;
 
-require("../handler.js");
+// Code requirements
+// var lambda = require("../handler.js");
 
-// var AWS = require("aws-sdk");
+// Invoke lambda function locally
+// lambda.generaterss();
 
-// exports.handler = function(event, context) {
-//   var sns      = AWS.SNS();
-//   var dynamoDb = AWS.DynamoDB();
-//   // do something with the services e.g. sns.publish
-// }
+// var foo = "bar";
+// var tea = [];
+// tea.flavors = "yyy";
 
-var foo = "bar";
-var tea = [];
-tea.flavors = "yyy";
+var lib = require("../lib/rss.js");
+var feed = lib.instantiateFeedObject();
 
-describe("testStuff", function() {
-
-	it("expect values", function(done) {
-		expect(foo).to.be.a("string");
-		expect(foo).to.equal("bar");
-		expect(foo).to.have.length(3);
-		expect(tea).to.have.property("flavors")
-		.with.length(3);
+describe("RSS Feed generation", function() {
+	it("feed be an object of type RSS", function(done) {
+		expect(feed).to.be.a("object");
+		expect(feed).to.have.property("title");
 		done();
 	});
 
-	it("should have expected values", function(done) {
+	it("feed have expected property values", function(done) {
 		chai.should();
-
-		foo.should.be.a('string');
-		foo.should.equal('bar');
-		foo.should.have.length(3);
-		tea.should.have.property('flavors')
-		.with.length(3);
-
+		feed.should.have.property("title")
+		.with.value("Angry Human");
 		done();
 	});
 
-	it("assert expected values", function(done) {
-		assert.typeOf(foo, 'string');
-		assert.equal(foo, 'bar');
-		assert.lengthOf(foo, 3)
-		assert.property(tea, 'flavors');
-		assert.lengthOf(tea.flavors, 3);
+	// it("assert expected values", function(done) {
+	// 	assert.typeOf(foo, 'string');
+	// 	assert.equal(foo, 'bar');
+	// 	assert.lengthOf(foo, 3)
+	// 	assert.property(tea, 'flavors');
+	// 	assert.lengthOf(tea.flavors, 3);
 
-		done();
-	});
+	// 	done();
+	// });
 
 });
