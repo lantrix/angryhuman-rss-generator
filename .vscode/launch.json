@@ -1,57 +1,41 @@
 {
-    "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceRoot}/handler.js",
-            "stopOnEntry": false,
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "preLaunchTask": null,
-            "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy"
+            "args": [
+                "test/**/*.js",
+                "--no-timeouts"
             ],
+            "cwd": "${workspaceRoot}",
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "testing"
             },
-            "externalConsole": false,
-            "sourceMaps": false,
-            "outDir": null
+            "name": "Run mocha",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "request": "launch",
+            "runtimeExecutable": null,
+            "stopOnEntry": false,
+            "type": "node"
         },
         {
-            "name": "ImportRss",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceRoot}/import-rss.js",
-            "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": null,
-            "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy"
-            ],
             "env": {
                 "NODE_ENV": "development"
             },
             "externalConsole": false,
-            "sourceMaps": false,
-            "outDir": null
-        },        
-        {
-            "name": "Attach",
-            "type": "node",
-            "request": "attach",
-            "port": 5858,
-            "address": "localhost",
-            "restart": false,
-            "sourceMaps": false,
+            "name": "ImportRss",
             "outDir": null,
-            "localRoot": "${workspaceRoot}",
-            "remoteRoot": null
+            "preLaunchTask": null,
+            "program": "${workspaceRoot}/import-rss.js",
+            "request": "launch",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "runtimeExecutable": null,
+            "sourceMaps": false,
+            "stopOnEntry": false,
+            "type": "node"
         }
-    ]
+    ],
+    "version": "0.2.0"
 }
