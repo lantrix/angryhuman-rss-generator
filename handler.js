@@ -5,9 +5,6 @@
 const bbpromise = require("bluebird");
 const parser = bbpromise.promisify(require("rss-parser").parseURL);
 const aws = require("aws-sdk");
-const s3 = bbpromise.promisifyAll(new aws.S3());
-const rss = require("rss"); // used by functions in lib
-const fs = require("fs");
 
 // Require Logic
 var lib = require("./lib/rss.js");
@@ -32,6 +29,7 @@ const rssFeed = "angryhuman.xml";
 module.exports.generaterss = function() {
 	"use strict";
 	// AWS Setup
+	const s3 = bbpromise.promisifyAll(new aws.S3());
 	aws.config.region = region;
 
 	// Retrieve Source RSS promise
