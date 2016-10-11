@@ -13,5 +13,5 @@ Details below are from the [Install Serverless](https://github.com/serverless/se
 |  1.  | `npm install -g serverless` | Install Serverless CLI  |
 |  2.  | [Set up your Provider credentials](https://github.com/serverless/serverless/blob/master/docs/02-providers/aws/01-setup.md) | Connect Serverless with your provider |
 |  3.  | `cd angryhuman-rss-generator` | Change into your service directory  |
-|  4.  | `serverless deploy` | Deploy to your AWS account  |
-|  5.  | `serverless invoke --function hello` | Run the function we just deployed  |
+|  4.  | `serverless deploy -v` | Deploy to your AWS account  |
+|  5.  | `serverless invoke --function generaterss` | Run the function we just deployed  |

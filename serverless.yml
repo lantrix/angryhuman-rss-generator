@@ -7,11 +7,10 @@ provider:
   runtime: nodejs4.3
 
 functions:
- 	generaterss:
-		handler: handler.generaterss
-
-	events:
-		- schedule: rate(60 minutes)
+  generaterss:
+    handler: handler.generaterss
+    events:
+      - schedule: rate(3 mins)
 
 resources:
   Resources:
