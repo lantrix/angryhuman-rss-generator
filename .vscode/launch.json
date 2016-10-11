@@ -22,6 +22,19 @@
             "env": {
                 "NODE_ENV": "development"
             },
+            "name": "Handler",
+            "program": "${workspaceRoot}/handler.js",
+            "request": "launch",
+            "runtimeExecutable": null,
+            "stopOnEntry": false,
+            "type": "node"
+        },
+        {
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development"
+            },
             "externalConsole": false,
             "name": "ImportRss",
             "outDir": null,

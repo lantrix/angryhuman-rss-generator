@@ -2,47 +2,57 @@
 /*jshint esversion: 6 */
 /*jshint node: true */
 
-const aws = require("aws-sdk");
 const bbpromise = require("bluebird");
 const parser = bbpromise.promisify(require("rss-parser").parseURL);
-const jsonfile = bbpromise.promisifyAll(require("jsonfile"));
+const aws = require("aws-sdk");
+const s3 = bbpromise.promisifyAll(new aws.S3());
 const rss = require("rss"); // used by functions in lib
 const fs = require("fs");
-const AWS = require("aws-sdk");
 
 // Require Logic
 var lib = require("./lib/rss.js");
-
 Date.prototype.getMonthFormatted = function() {
 	var month = this.getMonth() + 1;
 	return month < 10 ? "0" + month : "" + month; // ("" + month) for string result
 };
-
 Date.prototype.getDayFormatted = function() {
 	var day = this.getDate();
 	return day < 10 ? "0" + day : "" + day; // ("" + day) for string result
 };
 
+// App setup
 const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
-const dataFile = "data/rssdata.json";
-const dataOutFile = "data/rssdata-out.json";
-//const rssFeedFile = "/var/www/angryhuman/angryhuman.xml";
-const rssFeedFile = "data/angryhuman.xml";
+const s3BucketName = "angryhumanrss";
+const region = "us-east-1";
+const dataFile = "data/rssdata";
+const dataOutFile = "data/rssdata-out";
+const rssFeed = "angryhuman.xml";
 
 // Entrypoint for AWS Lambda
 module.exports.generaterss = function() {
 	"use strict";
-	// Retrieve Local RSS Data
-	// TODO: create file if not exists
-	var rssData = jsonfile.readFileAsync(dataFile);
+	// AWS Setup
+	aws.config.region = region;
 
-	// Create new RSS feed everytime
-	var feed = lib.instantiateFeedObject();
-
-	// Retrieve Source RSS
+	// Retrieve Source RSS promise
 	var sourceRss = parser(sourceRssUri);
 
-	bbpromise.all([sourceRss, rssData]).then(function(result) {
+	var params = { Bucket: s3BucketName };
+	var s3Data = s3.headBucketAsync(params).then(function() {
+		var params = { Bucket: s3BucketName, Key: dataFile };
+		return s3.getObjectAsync(params);
+	}).then(function(data) {
+		return JSON.parse(new Buffer(data.Body).toString("utf8"));
+	}).catch(SyntaxError, function(e) {
+		console.log("Error: ", e);
+	})
+	.catch(function(e) {
+		//Catch any other error
+		console.log("Catch: ", e);
+	});
+
+	// Chained retrieval promises - wait for them both
+	bbpromise.all([sourceRss, s3Data]).then(function(result) {
 		//result is an array contains the objects of the fulfilled promises.
 		let itemsToAdd = [];
 		const sourceRss = result[0];
@@ -63,7 +73,7 @@ module.exports.generaterss = function() {
 				// console.log(newRssItem.pubDate);
 				// console.log(newRssItem.guid);
 			}
-			let skip = false
+			let skip = false;
 			rssData.forEach(function(existingRssItem) {
 				// Iterate through all the existing RSS entries from our source data
 				if (existingRssItem.guid == newRssItem.guid) {
@@ -76,9 +86,13 @@ module.exports.generaterss = function() {
 				itemsToAdd.push(newRssItem);
 			}
 		});
+		return itemsToAdd;
+	}).then(function(items) {
+		// Create new RSS feed everytime
+		var feed = lib.instantiateFeedObject();
 
 		// Iterate over Source items and add to RSS Data
-		itemsToAdd.forEach(function(entryToAdd) {
+		items.forEach(function(entryToAdd) {
 			feed.item({
 				title:  entryToAdd.contentSnippet,
 				description: entryToAdd.description,
@@ -95,42 +109,32 @@ module.exports.generaterss = function() {
 				]
 			});
 		});
-	}).then(
-		// Save out Local RSS Data
-		jsonfile.writeFileAsync(dataOutFile, feed.entries).then(function(result){
-			// Write XML out to disk for feedburner to pick up
-			let xml = feed.xml({indent: true});
-			let buffer = new Buffer(xml);
-			fs.open(rssFeedFile, 'w', function(err, fd) {
-				if (err) {
-					throw 'error opening file: ' + err;
-				}
-				fs.write(fd, buffer, 0, buffer.length, null, function(err) {
-					if (err) throw 'error writing file: ' + err;
-					fs.close(fd, function() {
-						console.log('file written');
-					})
-				});
-			});
-			fs.writeFile(rssFeedFile, xml, function(err) {
-				if(err) {
-					return console.log(err);
-				}
-				console.log("The file was saved!");
-			});
-		})
-		.catch(SyntaxError, function(e) {
-			console.log("Error: ", e);
-		})
-		.catch(function(e) {
-			//Catch any other error
-			console.log("Catch: ", e);
-		})
-	)
+		return feed;
+	}).then(function(feed) {
+		// Save out RSS Data - testing to alt file
+		var params = {
+			Bucket: s3BucketName,
+			Key: dataOutFile,
+			Body: JSON.stringify(feed.entries),
+			ContentType: "application/json"
+		};
+		s3.putObjectAsync(params);
+		return feed;
+	}).then(function(feed) {
+		let xml = feed.xml({indent: true});
+		var params = { 
+			Bucket: s3BucketName,
+			Key: rssFeed,
+			Body: new Buffer(xml),
+			ContentType: "application/xml"
+		};
+		return s3.putObjectAsync(params);
+	})
 	.catch(SyntaxError, function(e) {
 		console.log("Error: ", e);
-	//Catch any other error
-	}).catch(function(e) {
+	})
+	.catch(function(e) {
+		//Catch any other error
 		console.log("Catch: ", e);
 	});
 };
