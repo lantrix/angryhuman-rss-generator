@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang='en-US' xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+ <channel>
+  <title>Angry Human</title>
+  <link>http://www.rocklandworldradio.com/program/angryhuman/</link>
+  <description>David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure.</description>
+  <lastBuildDate>Tue, 14 Jun 2016 04:46:18 GMT</lastBuildDate>
+  <generator>pRSSlist Program 2.0</generator>
+  <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+  <atom:link href="http://microflapi.com/angryhuman/angryhuman.xml" rel="self" type="application/rss+xml" />
+  <itunes:explicit>yes</itunes:explicit>
+  <media:copyright>Copyright 2016 - Rockland World Radio</media:copyright>
+  <media:thumbnail url="http://www.rocklandworldradio.com/imgs/programs/hosts/angry_human2.gif"/>
+  <media:keywords>radio,rockland,human,angry,society</media:keywords>
+  <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Society &amp; Culture</media:category>
+  <itunes:owner>
+  <itunes:email>lantrix@pobox.com</itunes:email>
+  <itunes:name>Lantrix</itunes:name>
+  </itunes:owner>
+  <itunes:author>David Biedny</itunes:author>
+  <itunes:image href="http://www.rocklandworldradio.com/imgs/programs/hosts/angry_human2.gif" />
+  <itunes:keywords>radio,rockland,human,angry,society</itunes:keywords>
+  <itunes:subtitle>I'm mad as hell, and I'm not gonna take it anymore!</itunes:subtitle>
+  <itunes:summary>David Biedny is just a human being who realizes that we're in a dangerous epoch, and he's concerned about the denial which is rampant in our society. Complacency is a disease of the soul, and Angry Human is the cure. Host: David Biedny</itunes:summary>
+  <itunes:category text="Society &amp; Culture" />
+
+  <item>
+   <title>07/29/15</title>
+   <enclosure url="http://www.mediafire.com/download/wm3wzzw10243aas/ar_ah_07-29-15.mp3" length="71548865" type="application/octet-stream" />
+   <pubDate>Wed, 29 Jul 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-07-29-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/22/15</title>
+   <description>The Return of the Angry Human</description>
+   <enclosure url="http://www.mediafire.com/download/p7ghlpv15cz32kb/ar_ah_07-22-15.mp3" length="72573910" type="application/octet-stream" />
+   <pubDate>Wed, 22 Jul 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-07-22-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/08/15</title>
+   <enclosure url="http://www.mediafire.com/download/uz5uwbw1fgz03sp/ar_ah_04-08-15.mp3" length="72835134" type="application/octet-stream" />
+   <pubDate>Wed, 08 Apr 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-04-08-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/01/15</title>
+   <enclosure url="http://www.mediafire.com/download/dl86u5ie52au2v5/ar_ah_04-01-15.mp3" length="72604734" type="application/octet-stream" />
+   <pubDate>Wed, 01 Apr 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-04-01-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/25/15</title>
+   <enclosure url="http://www.mediafire.com/download/64ay8xg440rmj24/ar_ah_03-25-15.mp3" length="64218383" type="audio/mpeg" />
+   <pubDate>Wed, 25 Mar 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-03-25-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/18/15</title>
+   <enclosure url="http://www.mediafire.com/download/el1p37y84w34s2l/ar_ah_03-18-15.mp3" length="69720293" type="audio/mpeg" />
+   <pubDate>Wed, 18 Mar 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-03-18-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/11/15</title>
+   <enclosure url="http://www.mediafire.com/download/5512s51rt27l1cz/ar_ah_03-11-15.mp3" length="73085910" type="audio/mpeg" />
+   <pubDate>Wed, 11 Mar 2015 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-03-11-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/25/15</title>
+   <enclosure url="http://www.mediafire.com/download/g2c7u9i7kpbccl9/ar_ah_02-25-15.mp3" length="71521698" type="audio/mpeg" />
+   <pubDate>Wed, 25 Feb 2015 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-02-25-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/11/15</title>
+   <enclosure url="http://www.mediafire.com/download/9r62s82yce56sjz/ar_ah_02-11-15.mp3" length="72985077" type="audio/mpeg" />
+   <pubDate>Wed, 11 Feb 2015 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-02-11-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/28/15</title>
+   <enclosure url="http://www.mediafire.com/download/6icsboezuk8dd4t/ar_ah_01-28-15.mp3" length="72625110" type="audio/mpeg" />
+   <pubDate>Wed, 28 Jan 2015 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-01-28-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/21/15</title>
+   <enclosure url="http://www.mediafire.com/download/ld97nbm76kq2cpl/ar_ah_01-21-15.mp3" length="70602187" type="audio/mpeg" />
+   <pubDate>Wed, 21 Jan 2015 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-01-21-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/14/15</title>
+   <enclosure url="http://www.mediafire.com/download/uqs6rwowonnffwo/ar_ah_01-14-15.mp3" length="73720685" type="audio/mpeg" />
+   <pubDate>Wed, 14 Jan 2015 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2015-01-14-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/05/14</title>
+   <enclosure url="http://www.mediafire.com/download/w7mmm2wk1bu3ep1/ar_ah_12-05-14.mp3" length="72252081" type="audio/mpeg" />
+   <pubDate>Fri, 05 Dec 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-12-05-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/19/14</title>
+   <enclosure url="http://www.mediafire.com/download/jjz9g6ad6k63yu3/ar_ah_11-19-14.mp3" length="70999308" type="application/octet-stream" />
+   <pubDate>Wed, 19 Nov 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-11-19-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/12/14</title>
+   <enclosure url="http://www.mediafire.com/download/7wh2tn86t5aq6mk/ar_ah_11-12-14.mp3" length="75264522" type="audio/mpeg" />
+   <pubDate>Wed, 12 Nov 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-11-12-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/05/14</title>
+   <enclosure url="http://www.mediafire.com/download/8vpq1ix5k4f3mh6/ar_ah_11-05-14.mp3" length="34825895" type="audio/mpeg" />
+   <pubDate>Wed, 05 Nov 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-11-05-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/15/14</title>
+   <enclosure url="http://www.mediafire.com/download/9xl67g3163v7g1a/ar_ah_10-15-14.mp3" length="73416098" type="application/octet-stream" />
+   <pubDate>Wed, 15 Oct 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-10-15-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/08/14</title>
+   <enclosure url="http://www.mediafire.com/download/b0y9izudaa5985p/33fr6tl4jvm1tl6/ar_ah_10-08-14.mp3" length="73972098" type="application/octet-stream" />
+   <pubDate>Wed, 08 Oct 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-10-08-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/24/14</title>
+   <enclosure url="http://www.mediafire.com/download/b0y9izudaa5985p/ar_ah_09-24-14.mp3" length="73972098" type="application/octet-stream" />
+   <pubDate>Wed, 24 Sep 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-09-24-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/17/14</title>
+   <enclosure url="http://www.mediafire.com/download/b24awg182nd6co4/ar_ah_09-17-14.mp3" length="74267689" type="audio/mpeg" />
+   <pubDate>Wed, 17 Sep 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-09-17-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/10/14</title>
+   <enclosure url="http://www.mediafire.com/download/se457bx4uy8il90/ar_ah_09-10-14.mp3" length="72649350" type="application/octet-stream" />
+   <pubDate>Wed, 10 Sep 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-09-10-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/03/14</title>
+   <enclosure url="http://www.mediafire.com/download/kkdtts6vxd66yt6/ar_ah_09-03-14.mp3" length="75070693" type="audio/mpeg" />
+   <pubDate>Wed, 03 Sep 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-09-03-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/27/14</title>
+   <enclosure url="http://www.mediafire.com/download/5y8r6o6adgpdlo1/ar_ah_08-_27-14.mp3" length="73257796" type="audio/mpeg" />
+   <pubDate>Wed, 27 Aug 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-08-27-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/20/14</title>
+   <enclosure url="http://www.mediafire.com/download/m6gdphe58lv6w4d/ar_ah_08-20-14.mp3" length="74916049" type="audio/mpeg" />
+   <pubDate>Wed, 20 Aug 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-08-20-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/06/14</title>
+   <enclosure url="http://www.mediafire.com/download/m61wmbeiy6q4d8y/ar_ah_08-06-14.mp3" length="75563363" type="audio/mpeg" />
+   <pubDate>Wed, 06 Aug 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-08-06-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/23/14</title>
+   <enclosure url="http://www.mediafire.com/download/ax7aiyesed2zo8p/ar_ah_07-23-14.mp3" length="73572832" type="audio/mpeg" />
+   <pubDate>Wed, 23 Jul 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-07-23-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/09/14</title>
+   <enclosure url="http://www.mediafire.com/download/2ts7q4mxfaltzx2/ar_ah_07-09-14.mp3" length="75010089" type="audio/mpeg" />
+   <pubDate>Wed, 09 Jul 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-07-09-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/02/14</title>
+   <enclosure url="http://www.mediafire.com/download/5fj4oda62a0ha8p/ar_ah_07-02-14.mp3" length="71712914" type="audio/mpeg" />
+   <pubDate>Wed, 02 Jul 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-07-02-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/18/14</title>
+   <enclosure url="http://www.mediafire.com/download/6pe3c824znn7qen/ar_ah_06-18-14.mp3" length="72256783" type="audio/mpeg" />
+   <pubDate>Wed, 18 Jun 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-06-18-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/11/14</title>
+   <enclosure url="http://www.mediafire.com/download/prce8bgsasy6ubx/ar_ah_06-11-14.mp3" length="75291167" type="audio/mpeg" />
+   <pubDate>Wed, 11 Jun 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-06-11-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/28/14</title>
+   <enclosure url="http://www.mediafire.com/download/vz9int2qk65q65i/ar_ah_05-28-14.mp3" length="72104751" type="audio/mpeg" />
+   <pubDate>Wed, 28 May 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-05-28-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/21/14</title>
+   <enclosure url="http://www.mediafire.com/download/ixd67bw2ylad2c8/ar_ah_05-21-14.mp3" length="80765910" type="audio/mpeg" />
+   <pubDate>Wed, 21 May 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-05-21-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/07/14</title>
+   <enclosure url="http://www.mediafire.com/download/pgzmlw9wl9rem5c/ar_ah_05-07-14.mp3" length="72865436" type="audio/mpeg" />
+   <pubDate>Wed, 07 May 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-05-07-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/23/14</title>
+   <enclosure url="http://www.mediafire.com/download/waqzgq9hr9w2ahj/ar_ah_04-23-14.mp3" length="77235200" type="audio/mpeg" />
+   <pubDate>Wed, 23 Apr 2014 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-04-23-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/09/14</title>
+   <enclosure url="http://www.mediafire.com/download/yssfosi21plu50j/ar_ah_04-11-14.mp3" length="69878073" type="audio/mpeg" />
+   <pubDate>Wed, 09 Apr 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-04-09-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/02/14</title>
+   <enclosure url="http://www.mediafire.com/download/k6maadopho6yqpf/ar_ah_04-02-14.mp3" length="74972996" type="audio/mpeg" />
+   <pubDate>Wed, 02 Apr 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-04-02-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/26/14</title>
+   <enclosure url="http://www.mediafire.com/download/zwv3knq9gvpnqlv/ar_ah_03-26-14.mp3" length="74105730" type="audio/mpeg" />
+   <pubDate>Wed, 26 Mar 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-03-26-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/14/14</title>
+   <enclosure url="http://www.mediafire.com/download/8k5d4hh1ry8bhys/ar_ah_03-14-14.mp3" length="73251526" type="audio/mpeg" />
+   <pubDate>Fri, 14 Mar 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-03-14-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/05/14</title>
+   <enclosure url="http://www.mediafire.com/download/e3pas9git2tf4w5/ar_ah_03-05-14.mp3" length="73398857" type="audio/mpeg" />
+   <pubDate>Wed, 05 Mar 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-03-05-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/27/14</title>
+   <enclosure url="http://www.mediafire.com/download/imbmz39bzju31vg/ar_ah_02-27-14.mp3" length="73652634" type="application/octet-stream" />
+   <pubDate>Thu, 27 Feb 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-02-27-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/20/14</title>
+   <enclosure url="http://www.mediafire.com/download/g0sekq7inrbb744/ar_ah_02-20-14.mp3" length="72694242" type="application/octet-stream" />
+   <pubDate>Thu, 20 Feb 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-02-20-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/12/14</title>
+   <enclosure url="http://www.mediafire.com/download/pwr9k0en32l21v8/ar_ah_02-12-14.mp3" length="74336130" type="audio/mpeg" />
+   <pubDate>Wed, 12 Feb 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-02-12-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/07/14</title>
+   <enclosure url="http://www.mediafire.com/download/7u82xuig4u4zbji/ar_ah_02-07-14.mp3" length="73121436" type="audio/mpeg" />
+   <pubDate>Fri, 07 Feb 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-02-07-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/29/14</title>
+   <enclosure url="http://www.mediafire.com/download/sa0s22uj6h5ejkz/ar_ah_01-29-14.mp3" length="69102882" type="application/octet-stream" />
+   <pubDate>Wed, 29 Jan 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-01-29-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/24/14</title>
+   <enclosure url="http://www.mediafire.com/download/zbhr3dmo7omvnk6/ar_ah_01-24-14.mp3" length="72117812" type="audio/mpeg" />
+   <pubDate>Fri, 24 Jan 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-01-24-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/15/14</title>
+   <enclosure url="http://www.mediafire.com/download/fxnj3164wkg613r/ar_ah_01-15-14.mp3" length="73971461" type="audio/mpeg" />
+   <pubDate>Wed, 15 Jan 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-01-15-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/08/14</title>
+   <enclosure url="http://www.mediafire.com/download/vb0bt80zfbp4kfz/ar_ah_01-08-14.mp3" length="74178873" type="audio/mpeg" />
+   <pubDate>Wed, 08 Jan 2014 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2014-01-08-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/18/13</title>
+   <enclosure url="http://www.mediafire.com/download/5u96hrlljxeb320/ar_ah_12-18-13.mp3" length="74125061" type="audio/mpeg" />
+   <pubDate>Wed, 18 Dec 2013 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-12-18-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/11/13</title>
+   <enclosure url="http://www.mediafire.com/download/la9vpgc6vovqc4y/ar_ah_12-11-13.mp3" length="71649698" type="audio/mpeg" />
+   <pubDate>Wed, 11 Dec 2013 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-12-11-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/04/13</title>
+   <enclosure url="http://www.mediafire.com/download/jr77k5e7jrirrly/ar_ah_12-04-13.mp3" length="73692996" type="audio/mpeg" />
+   <pubDate>Wed, 04 Dec 2013 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-12-04-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/20/13</title>
+   <enclosure url="http://www.mediafire.com/download/jbf84vb5x8bh2fd/ar_ah_11-20-13.mp3" length="74605191" type="audio/mpeg" />
+   <pubDate>Wed, 20 Nov 2013 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-11-20-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/06/13</title>
+   <description>New Time, New Day (Wednesday)
+&lt;br>With Ron Egatz</description>
+   <enclosure url="http://www.mediafire.com/file/j8883w2huxwmf32/ar_ah_11-06-13.mp3" length="70776163" type="audio/mpeg" />
+   <pubDate>Wed, 06 Nov 2013 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-11-06-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/29/13</title>
+   <enclosure url="http://www.mediafire.com/file/657b8x0ob9eb44r/ar_ah_10-29-13.mp3" length="72136620" type="audio/mpeg" />
+   <pubDate>Tue, 29 Oct 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-10-29-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/23/13</title>
+   <description>Angry human is thinking of moving to Wednesdays</description>
+   <enclosure url="http://www.mediafire.com/file/q5fvmuoki3e04zw/ar_ah_10-23-13.mp3" length="74034677" type="audio/mpeg" />
+   <pubDate>Wed, 23 Oct 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-10-23-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/15/13</title>
+   <enclosure url="http://www.mediafire.com/file/vae53su4ez1n2p2/ar_ah_10-15-13.mp3" length="73128228" type="audio/mpeg" />
+   <pubDate>Tue, 15 Oct 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-10-15-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/01/13</title>
+   <enclosure url="http://www.mediafire.com/file/hszep7dg7p7ovaw/ar_ah_10-01-13.mp3" length="74191058" type="audio/mpeg" />
+   <pubDate>Tue, 01 Oct 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-10-01-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/24/13</title>
+   <enclosure url="http://www.mediafire.com/file/1gou005x1mdylxt/ar_ah_09-24-13.mp3" length="73913586" type="audio/mpeg" />
+   <pubDate>Tue, 24 Sep 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-09-24-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/03/13</title>
+   <enclosure url="http://www.mediafire.com/file/k0icyrj58tp0b7o/ar_ah_09-03-13.mp3" length="71737938" type="application/octet-stream" />
+   <pubDate>Tue, 03 Sep 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-09-03-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/27/13</title>
+   <enclosure url="http://www.mediafire.com/file/ahhvmqjk3543cnw/ar_ah_08-27-13.mp3" length="71290253" type="audio/mpeg" />
+   <pubDate>Tue, 27 Aug 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-08-27-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/13/13</title>
+   <enclosure url="http://www.mediafire.com/file/01g950v1jteb8e5/ar_ah_08-13-13.mp3" length="67239183" type="audio/mpeg" />
+   <pubDate>Tue, 13 Aug 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-08-13-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/06/13</title>
+   <enclosure url="http://www.mediafire.com/file/e3adac98id656tj/ar_ah_08-06-13.mp3" length="72211330" type="audio/mpeg" />
+   <pubDate>Tue, 06 Aug 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-08-06-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/30/13</title>
+   <enclosure url="http://www.mediafire.com/file/tdh9l211474nr44/ar_ah_07-30-13.mp3" length="72898351" type="audio/mpeg" />
+   <pubDate>Tue, 30 Jul 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-07-30-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/16/13</title>
+   <enclosure url="http://www.mediafire.com/file/00s2w3ganmj444g/ar_ah_07-16-13.mp3" length="73004930" type="audio/mpeg" />
+   <pubDate>Tue, 02 Jul 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-07-16-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/09/13</title>
+   <enclosure url="http://www.mediafire.com/file/9ehit61wyq8bd02/ar_ah_07-09-13.mp3" length="57391293" type="application/octet-stream" />
+   <pubDate>Tue, 09 Jul 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-07-09-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/02/13</title>
+   <enclosure url="http://www.mediafire.com/file/bh7gav1rob81boz/ar_ah_07-02-13.mp3" length="72923951" type="audio/mpeg" />
+   <pubDate>Tue, 02 Jul 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-07-02-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/25/13</title>
+   <enclosure url="http://www.mediafire.com/file/375py4vpo7oshce/ar_ah_06-25-13.mp3" length="69733355" type="audio/mpeg" />
+   <pubDate>Tue, 25 Jun 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-06-25-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/21/13</title>
+   <enclosure url="http://www.mediafire.com/file/ob8pw3nntv6okqo/ar_ah_05-21-13.mp3" length="74340832" type="audio/mpeg" />
+   <pubDate>Tue, 21 May 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-05-21-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/07/13</title>
+   <enclosure url="http://www.mediafire.com/file/g8k6bo6rr8t4m9v/ar_ah_05-07-13.mp3" length="54733752" type="application/octet-stream" />
+   <pubDate>Tue, 07 May 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-05-07-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/23/13</title>
+   <enclosure url="http://www.mediafire.com/file/mbvrvzkvvoskrxz/ar_ah_04-23-13.mp3" length="72080196" type="audio/mpeg" />
+   <pubDate>Tue, 23 Apr 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-04-23-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/16/13</title>
+   <enclosure url="http://www.mediafire.com/file/lldn5t4d74o125s/ar_ah_04-16-13(2).mp3" length="74199249" type="audio/mpeg" />
+   <pubDate>Tue, 16 Apr 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-04-16-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/09/13</title>
+   <enclosure url="http://www.mediafire.com/file/ak811qay7ta5h2h/ar_ah_04-09-13.mp3" length="58398765" type="application/octet-stream" />
+   <pubDate>Tue, 09 Apr 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-04-09-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/02/13</title>
+   <enclosure url="http://www.mediafire.com/file/itk9f15bxnflh37/ar_ah_04-02-13.mp3" length="71078661" type="audio/mpeg" />
+   <pubDate>Tue, 02 Apr 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-04-02-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/26/13</title>
+   <enclosure url="http://www.mediafire.com/file/iminji1ymwan4ia/ar_ah_03-26-13.mp3" length="70367085" type="audio/mpeg" />
+   <pubDate>Tue, 26 Mar 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-03-26-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/19/13</title>
+   <enclosure url="http://www.mediafire.com/file/yceeo6oj849ri06/ar_ah_03-19-13.mp3" length="70309093" type="audio/mpeg" />
+   <pubDate>Tue, 19 Mar 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-03-19-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/05/13</title>
+   <enclosure url="http://www.mediafire.com/file/d2p845101v7459l/ar_ah_03-05-13.mp3" length="71977273" type="audio/mpeg" />
+   <pubDate>Tue, 05 Mar 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-03-05-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/26/13</title>
+   <enclosure url="http://www.mediafire.com/file/bxyr14z2a3bhmre/ar_ah_02-26-13.mp3" length="69751640" type="audio/mpeg" />
+   <pubDate>Tue, 26 Feb 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-02-26-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/14/13</title>
+   <enclosure url="http://www.mediafire.com/file/h3a1bh7f0gh6d51/ar_ah_02-14-13.mp3" length="72909844" type="audio/mpeg" />
+   <pubDate>Thu, 14 Feb 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-02-14-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/29/13</title>
+   <enclosure url="http://www.mediafire.com/file/1siku8a6z5b3ltw/ar_ah_01-29-13.mp3" length="69569828" type="audio/mpeg" />
+   <pubDate>Tue, 29 Jan 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-01-29-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/15/13</title>
+   <enclosure url="http://www.mediafire.com/file/56qq58vv9151c44/ar_ah_01-15-13.mp3" length="69816424" type="audio/mpeg" />
+   <pubDate>Tue, 15 Jan 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-01-15-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/08/13</title>
+   <enclosure url="http://www.mediafire.com/file/x1r113qdq4bz26q/ar_ah_01-08-13.mp3" length="73429159" type="audio/mpeg" />
+   <pubDate>Tue, 08 Jan 2013 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2013-01-08-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/18/12</title>
+   <enclosure url="http://www.mediafire.com/file/uemg01xzh3a5u8q/ar_AH_12-18-12.mp3" length="58590273" type="audio/mpeg" />
+   <pubDate>Tue, 18 Dec 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-12-18-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/05/12</title>
+   <enclosure url="http://www.mediafire.com/file/frlao4vs5afwoz9/ar_ah_12-05-12.mp3" length="65539657" type="audio/mpeg" />
+   <pubDate>Wed, 05 Dec 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-12-05-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/13/12</title>
+   <enclosure url="http://www.mediafire.com/file/34vxaf4bb7e1niw/ar_ah_11-13-12.mp3" length="76636473" type="audio/mpeg3" />
+   <pubDate>Tue, 13 Nov 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-11-13-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/06/12</title>
+   <enclosure url="http://www.mediafire.com/file/vyaxm21gvvaxfgz/ar_ah_11-06-12.mp3" length="67132604" type="audio/mpeg3" />
+   <pubDate>Tue, 06 Nov 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-11-06-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/25/12</title>
+   <enclosure url="http://www.mediafire.com/file/cl0h17544azgidl/ar_ah_10-26-12.mp3" length="56864599" type="audio/mpeg3" />
+   <pubDate>Thu, 25 Oct 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-10-25-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/16/12</title>
+   <description>ON THE DEBATE no. 2</description>
+   <enclosure url="http://www.mediafire.com/file/5r6bbo2r50i7m7c/ar_ah_10-16-12.mp3" length="81501518" type="audio/mpeg3" />
+   <pubDate>Tue, 16 Oct 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-10-16-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/09/12</title>
+   <enclosure url="http://www.mediafire.com/file/8ousn9gfafva28u/ar_ah_10-09-12.mp3" length="71057763" type="audio/mpeg3" />
+   <pubDate>Tue, 09 Oct 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-10-09-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/04/12</title>
+   <description>Response to first Presidential Debate</description>
+   <enclosure url="http://www.mediafire.com/file/iq4549vsf7dv7dm/ar_ah_10-04-12.mp3" length="71962644" type="audio/mpeg3" />
+   <pubDate>Thu, 04 Oct 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-10-04-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/25/12</title>
+   <enclosure url="http://www.mediafire.com/file/h3j3qe33zkhenly/ar_ah_09-25-12.mp3" length="70144000" type="audio/mpeg3" />
+   <pubDate>Tue, 25 Sep 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-09-25-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/18/12</title>
+   <enclosure url="http://www.mediafire.com/file/psu46j374tc4tta/ar_ah_09-18-12.mp3" length="58309484" type="audio/mpeg3" />
+   <pubDate>Tue, 18 Sep 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-09-18-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/11/12</title>
+   <enclosure url="http://www.mediafire.com/file/hjhmb9o9cp239qv/ar_ah_09-11-12.mp3" length="72039654" type="audio/mpeg3" />
+   <pubDate>Tue, 11 Sep 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-09-11-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/04/12</title>
+   <enclosure url="http://www.mediafire.com/file/xc6v9x9vmlyvb2o/ar_ah_09-04-12.mp3" length="72104904" type="audio/mpeg3" />
+   <pubDate>Tue, 04 Sep 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-09-04-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/28/12</title>
+   <enclosure url="http://www.mediafire.com/file/hmw2g1fxgvfm4s9/ar_ah_08-28-12.mp3" length="71927118" type="audio/mpeg3" />
+   <pubDate>Tue, 28 Aug 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-08-28-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/14/12</title>
+   <enclosure url="http://www.mediafire.com/file/bszv9t7fytl8c9l/ar_ah_08-14-12.mp3" length="51847732" type="audio/mpeg3" />
+   <pubDate>Tue, 14 Aug 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-08-14-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/07/12</title>
+   <enclosure url="http://www.mediafire.com/file/2ubhorh78x7udg3/ar_ah_08-07-12.mp3" length="51145930" type="audio/mpeg3" />
+   <pubDate>Tue, 07 Aug 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-08-07-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/31/12</title>
+   <enclosure url="http://www.mediafire.com/file/4zoqdtja8je2oix/ar_ah_07-31-12.mp3" length="49323558" type="audio/mpeg3" />
+   <pubDate>Tue, 31 Jul 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-31-03-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/24/12</title>
+   <enclosure url="http://www.mediafire.com/file/2zbjvkxoyjg0654/ar_ah_07-24-12.mp3" length="51729845" type="audio/mpeg3" />
+   <pubDate>Tue, 24 Jul 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-07-24-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/17/12</title>
+   <enclosure url="http://www.mediafire.com/file/11gb8zqt4g8rb1o/ar_ah_07-17-12.mp3" length="50788869" type="audio/mpeg3" />
+   <pubDate>Tue, 17 Jul 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-07-17-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/03/12</title>
+   <enclosure url="http://www.mediafire.com/file/1xkuwb2plrc1h2s/ar_ah_07-03-12.mp3" length="71892114" type="audio/mpeg3" />
+   <pubDate>Tue, 03 Jul 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-07-03-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/26/12</title>
+   <enclosure url="http://www.mediafire.com/file/3bo8258n29e6ovz/ar_ah_06-26-12.mp3" length="72238498" type="audio/mpeg3" />
+   <pubDate>Tue, 26 Jun 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-06-26-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/19/12</title>
+   <enclosure url="http://www.mediafire.com/file/c9a9lr39mebmeho/ar_ah_06-19-12.mp3" length="72857077" type="audio/mpeg3" />
+   <pubDate>Tue, 19 Jun 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-06-19-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/12/12</title>
+   <description>with Special Guest Lee Camp</description>
+   <enclosure url="http://www.mediafire.com/file/4nb4hq9vm7565q7/ar_ah_06-13-12.mp3" length="65489598" type="audio/mpeg3" />
+   <pubDate>Tue, 12 Jun 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-06-12-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/05/12</title>
+   <enclosure url="http://www.mediafire.com/file/4eofzoqzufi7we5/ar_ah_06-05-12.mp3" length="71061942" type="audio/mpeg3" />
+   <pubDate>Tue, 05 Jun 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-06-05-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/29/12</title>
+   <enclosure url="http://www.mediafire.com/file/rvpmwaefv5y3zc6/ar_ah_05-29-12.mp" length="72642873" type="audio/mpeg3" />
+   <pubDate>Tue, 29 May 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-05-29-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/22/12</title>
+   <enclosure url="http://www.mediafire.com/file/b7i11g8qyo4sybh/ar_ah_05-22-12.mp3" length="58442813" type="audio/mpeg3" />
+   <pubDate>Tue, 22 May 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-05-22-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/15/12</title>
+   <enclosure url="http://www.mediafire.com/file/x4cyw5dco4xa0x9/ar_ah_05-15-12.mp3" length="59093576" type="audio/mpeg3" />
+   <pubDate>Tue, 15 May 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-05-15-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/08/12</title>
+   <enclosure url="http://www.mediafire.com/file/0510m6vvkwio6dm/ar_ah_05-08-12.mp3" length="60778787" type="audio/mpeg3" />
+   <pubDate>Tue, 08 May 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-05-08-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/01/12</title>
+   <enclosure url="http://www.mediafire.com/file/ob6pk8xj87lw0yn/ar_ah_05-01-12.mp3" length="58367163" type="audio/mpeg3" />
+   <pubDate>Tue, 01 May 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-05-01-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/24/12</title>
+   <enclosure url="http://www.mediafire.com/file/ql1a45a8zypy31w/ar_ah_04-24-12.mp3" length="58710725" type="audio/mpeg3" />
+   <pubDate>Tue, 24 Apr 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-04-24-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/10/12</title>
+   <enclosure url="http://www.mediafire.com/file/9tv1r5d7qq2wagg/ar_ah_04-10-12.mp3" length="57920782" type="audio/mpeg3" />
+   <pubDate>Tue, 10 Apr 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-04-10-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/03/12</title>
+   <enclosure url="http://www.mediafire.com/file/5qci7awb7k38kvu/ar_ah_04-03-12.mp3" length="50072693" type="audio/mpeg3" />
+   <pubDate>Tue, 03 Apr 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-04-03-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/20/12</title>
+   <enclosure url="http://www.mediafire.com/file/6q03f5d1wsxdlc1/ar_ah_03-20-12.mp3" length="56614660" type="audio/mpeg3" />
+   <pubDate>Tue, 20 Mar 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-03-20-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/13/12</title>
+   <enclosure url="http://www.mediafire.com/file/b84ok4dx5ypxewy/ar_ah_03-13-12.mp3" length="59171734" type="audio/mpeg3" />
+   <pubDate>Tue, 13 Mar 2012 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-03-13-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/06/12</title>
+   <enclosure url="http://www.mediafire.com/file/plc888vc7ruac5l/ar_ah_03-06-12.mp3" length="57243688" type="audio/mpeg3" />
+   <pubDate>Tue, 06 Mar 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-03-06-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/28/12</title>
+   <enclosure url="http://www.mediafire.com/file/i54yu7bauyu9355/ar_ah_02-28-12.mp3" length="66009964" type="audio/mpeg3" />
+   <pubDate>Tue, 28 Feb 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-02-28-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/13/12</title>
+   <enclosure url="http://www.mediafire.com/file/dp9njzadvgt85au/ar_ah_02-13-12.mp3" length="58565275" type="audio/mpeg3" />
+   <pubDate>Mon, 13 Feb 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-02-13-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/31/12</title>
+   <enclosure url="http://www.mediafire.com/file/5v9ic0uy4d1n7ev/ar_ah_01-31-12.mp3" length="57119972" type="audio/mpeg3" />
+   <pubDate>Tue, 31 Jan 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-01-31-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/24/12</title>
+   <enclosure url="http://www.mediafire.com/file/6uw2d27h676ariv/ar_ah_01-24-12.mp3" length="56860002" type="audio/mpeg3" />
+   <pubDate>Tue, 24 Jan 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-01-24-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/17/12</title>
+   <enclosure url="http://www.mediafire.com/file/5eva7n0pbtj8bja/ar_ah_01-17-12.mp3" length="58426095" type="audio/mpeg3" />
+   <pubDate>Tue, 17 Jan 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-01-17-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/10/12</title>
+   <enclosure url="http://www.mediafire.com/file/ubo47x8ueoucx3a/ar_ah_01-10-12.mp3" length="58058709" type="audio/mpeg3" />
+   <pubDate>Tue, 10 Jan 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-01-10-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/03/12</title>
+   <enclosure url="http://www.mediafire.com/file/e47qnl9e540le59/ar_ah_01-03-12.mp3" length="58116387" type="audio/mpeg3" />
+   <pubDate>Tue, 03 Jan 2012 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2012-01-03-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/20/11</title>
+   <enclosure url="http://www.mediafire.com/file/s66pof6du6ez4d9/ar_ah_12-20-11.mp3" length="57415470" type="audio/mpeg3" />
+   <pubDate>Tue, 20 Dec 2011 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-12-20-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/05/11</title>
+   <enclosure url="http://www.mediafire.com/file/vxmfbw81cpn19x1/ar_ah_12-05-11-1.mp3" length="58429857" type="audio/mpeg3" />
+   <pubDate>Mon, 05 Dec 2011 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-12-05-22-01-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/29/11</title>
+   <enclosure url="http://www.mediafire.com/file/6wllx13q1kd9e0k/ar_ah_11-29-11.mp3" length="56991241" type="audio/mpeg3" />
+   <pubDate>Tue, 29 Nov 2011 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-11-29-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/15/11</title>
+   <enclosure url="http://www.mediafire.com/file/ttdgcgs33mm7p5j/ar_ah_11-15-11.mp3" length="59612263" type="audio/mpeg3" />
+   <pubDate>Tue, 15 Nov 2011 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-11-15-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/08/11</title>
+   <enclosure url="http://www.mediafire.com/file/qgizgj1qojalf4y/ar_ah_11-08-11.mp3" length="58940185" type="audio/mpeg3" />
+   <pubDate>Tue, 08 Nov 2011 22:00:00 EST</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-11-08-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/01/11</title>
+   <enclosure url="http://www.mediafire.com/file/k93u6mf984s3241/ar_ah_11-01-11.mp3" length="58637164" type="audio/mpeg3" />
+   <pubDate>Tue, 01 Nov 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-11-01-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/25/11</title>
+   <enclosure url="http://www.mediafire.com/file/1dyzcwf7vey1xe1/ar_ah_10-25-11.mp3" length="58260583" type="audio/mpeg3" />
+   <pubDate>Tue, 25 Oct 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-10-25-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/11/11 - Global Occupation Special</title>
+   <description>Global Occupation Special.
+&lt;br>1.5 Hour Special Episode!</description>
+   <enclosure url="http://www.mediafire.com/file/0k1wdfhv8khl070/ar_ah_10-11-11.mp3" length="90753566" type="audio/mpeg3" />
+   <pubDate>Tue, 11 Oct 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-10-11-22-00-00</guid>
+   <itunes:duration>01:30:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/04/11</title>
+   <enclosure url="http://www.mediafire.com/file/gv9ja9mh5jaae7j/ar_ah_10-04-11.mp3" length="58336234" type="audio/mpeg3" />
+   <pubDate>Tue, 04 Oct 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-10-04-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/27/11</title>
+   <enclosure url="http://www.mediafire.com/file/5eobr5si7ncbtp3/ar_ah_09-26-11.mp3" length="58743744" type="audio/mpeg3" />
+   <pubDate>Tue, 27 Sep 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-09-27-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/20/11</title>
+   <enclosure url="http://www.mediafire.com/file/6x2d2uj18w8mdu7/ar_ah_09-20-11.mp3" length="59181347" type="audio/mpeg3" />
+   <pubDate>Tue, 20 Sep 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-09-20-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/13/11</title>
+   <enclosure url="http://www.mediafire.com/file/f4uwbo188k9j94t/ar_ah_09-13-11.mp3" length="58723682" type="audio/mpeg3" />
+   <pubDate>Tue, 13 Sep 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-09-13-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/06/11</title>
+   <enclosure url="http://www.mediafire.com/file/5h25o9bz10853gu/ar_ah_09-07-11.mp3" length="58006882" type="audio/mpeg3" />
+   <pubDate>Tue, 06 Sep 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-09-06-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/30/11</title>
+   <enclosure url="http://www.mediafire.com/file/dlgb9b3d5aq9ey5/ar_ah_08-30-11.mp3" length="57703861" type="audio/mpeg3" />
+   <pubDate>Tue, 30 Aug 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-08-30-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/23/11</title>
+   <enclosure url="http://www.mediafire.com/file/0ep6ko2evrv162e/ar_ah_08-23-11.mp3" length="44297154" type="audio/mpeg3" />
+   <pubDate>Tue, 23 Aug 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-08-30-08-52-41</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/09/11</title>
+   <enclosure url="http://www.mediafire.com/file/841rp5cll13g904/ar_ah_08.09.11.mp3" length="52363924" type="audio/mpeg3" />
+   <pubDate>Tue, 09 Aug 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-08-10-07-40-11</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/02/11</title>
+   <enclosure url="http://www.mediafire.com/file/1173qd2ezcwseaz/ar_ah_08-02-11.mp3" length="64831319" type="audio/mpeg3" />
+   <pubDate>Tue, 02 Aug 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-08-06-15-31-37</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/26/11</title>
+   <enclosure url="http://www.mediafire.com/file/dj24npn39ky3my2/ar_ah_07-26-11.mp3" length="58070412" type="audio/mpeg3" />
+   <pubDate>Tue, 26 Jul 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-07-27-22-58-33</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/19/11</title>
+   <enclosure url="http://www.mediafire.com/file/2krsfpnp5j8srmf/ar_ah_07-19-11.mp3" length="58485445" type="audio/mpeg3" />
+   <pubDate>Tue, 19 Jul 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-07-21-15-54-49</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/12/11</title>
+   <enclosure url="http://www.mediafire.com/file/jn9r24ajswccb58/ar_ah_07-12-11.mp3" length="58082114" type="audio/mpeg3" />
+   <pubDate>Tue, 12 Jul 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-07-17-11-29-37</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/28/11</title>
+   <enclosure url="http://www.mediafire.com/file/kdpbfbos37ezzrf/ar_ah_06-28-11.mp3" length="57149648" type="audio/mpeg3" />
+   <pubDate>Tue, 28 Jun 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-07-01-09-31-26</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/21/11</title>
+   <enclosure url="http://www.mediafire.com/file/akj97hkaup8zta1/ar_ah_06-21-11.mp3" length="58492968" type="audio/mpeg3" />
+   <pubDate>Tue, 21 Jun 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-06-23-16-03-19</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/14/11</title>
+   <enclosure url="http://www.mediafire.com/file/i7fj1r2jah72r2j/ar_ah_06-14-11.mp3" length="59077693" type="audio/mpeg3" />
+   <pubDate>Tue, 14 Jun 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-06-19-09-44-06</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/07/11</title>
+   <enclosure url="http://www.mediafire.com/file/kjra51zbz5mng95/ar_ah_06-07-11.mp3" length="57270856" type="audio/mpeg3" />
+   <pubDate>Tue, 07 Jun 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-06-07-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/31/11</title>
+   <enclosure url="http://www.mediafire.com/file/3i03c3r9t3q1hl0/ar_ah_05-31-11.mp3" length="59350621" type="audio/mpeg3" />
+   <pubDate>Tue, 31 May 2011 22:00:00 EDT</pubDate>
+   <guid isPermaLink="false">AngryHuman-2011-05-31-22-00-00</guid>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/24/11</title>
+   <enclosure url="http://www.mediafire.com/file/vqgiuzsdz8hleu3/ar_ah_05-24-11.mp3" length="56111719" type="audio/mpeg3" />
+   <pubDate>Tue, 24 May 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/17/11</title>
+   <enclosure url="http://www.mediafire.com/file/yxiyboirjog1nc5/ar_ah_05-17-11.mp3" length="56507662" type="audio/mpeg3" />
+   <pubDate>Tue, 17 May 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/10/11</title>
+   <enclosure url="http://www.mediafire.com/file/31dmqlqm6lyb63l/ar_ah_05-10-11.mp3" length="57315995" type="audio/mpeg3" />
+   <pubDate>Tue, 10 May 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/03/11</title>
+   <enclosure url="http://www.mediafire.com/file/b5zhl7ch32lbqdb/ar_ah_05-03-11.mp3" length="72372975" type="audio/mpeg3" />
+   <pubDate>Tue, 03 May 2011 22:00:00 EDT </pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/26/11</title>
+   <enclosure url="http://www.mediafire.com/file/ge3g3dlr3ziob5k/ar_ah_04-26-11.mp3" length="55377083" type="audio/mpeg3" />
+   <pubDate>Tue, 26 Apr 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/19/11</title>
+   <enclosure url="http://www.mediafire.com/file/35pufw5d8pfxdff/ar_ah_04-19-11.mp3" length="57719326" type="audio/mpeg3" />
+   <pubDate>Tue, 19 Apr 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/12/11</title>
+   <enclosure url="http://www.mediafire.com/file/xu1zx5iiu4bihmo/ar_ah_04-11-11.mp3" length="57884838" type="audio/mpeg3" />
+   <pubDate>Tue, 12 Apr 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/05/11</title>
+   <enclosure url="http://www.mediafire.com/file/mtxk749w2n32lgm/ar_ah_04-05-11.mp3" length="56693236" type="audio/mpeg3" />
+   <pubDate>Tue, 05 Apr 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/15/11</title>
+   <enclosure url="http://www.mediafire.com/file/ifc4fm6487ocr79/ar_ah_03-15-11.mp3" length="57665262" type="audio/mpeg3" />
+   <pubDate>Tue, 15 Mar 2011 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/08/11</title>
+   <enclosure url="http://www.mediafire.com/file/gvjmfh3bt9f91ql/ar_ah_03-08-11.mp3" length="56472554" type="audio/mpeg3" />
+   <pubDate>Tue, 08 Mar 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/01/11</title>
+   <enclosure url="http://www.mediafire.com/file/5tymjc3wbwfvwxd/ar_ah_03-01-11.mp3" length="53477876" type="audio/mpeg3" />
+   <pubDate>Tue, 01 Mar 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/22/11</title>
+   <enclosure url="http://www.mediafire.com/file/l8cgi7ai7gwjgnm/ar_ah_02-22-11.mp3" length="57873553" type="audio/mpeg3" />
+   <pubDate>Tue, 22 Feb 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/15/11</title>
+   <enclosure url="http://www.mediafire.com/file/qs8t2t13qo8gq72/ar_ah_02-15-11.mp3" length="49246039" type="audio/mpeg3" />
+   <pubDate>Tue, 15 Feb 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/01/11</title>
+   <enclosure url="http://www.mediafire.com/file/9holpgq88mhryz0/ar_ah_02-01-11.mp3" length="50583666" type="audio/mpeg3" />
+   <pubDate>Tue, 01 Feb 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/25/11</title>
+   <enclosure url="http://www.mediafire.com/file/6qpnt8dfd7u5bqr/ar_ah_01.25.11.mp3" length="51324376" type="audio/mpeg3" />
+   <pubDate>Tue, 25 Jan 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/18/11</title>
+   <enclosure url="http://www.mediafire.com/file/wo49nfdeal641j5/ar_ah_01-18-11.mp3" length="56949177" type="audio/mpeg3" />
+   <pubDate>Tue, 18 Jan 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/11/11</title>
+   <enclosure url="http://www.mediafire.com/file/3rnqvb43rqsh3kn/ar_ah_01-11-11.mp3" length="52659592" type="audio/mpeg3" />
+   <pubDate>Tue, 11 Jan 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>01/04/11</title>
+   <enclosure url="http://www.mediafire.com/file/bdwm4z6r067m97o/ar_ah_01-04-11.mp3" length="56581223" type="audio/mpeg3" />
+   <pubDate>Tue, 04 Jan 2011 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/14/10</title>
+   <enclosure url="http://www.mediafire.com/file/htdrv00dez25nfm/ar_ah_12-14-10.mp3" length="56664397" type="audio/mpeg3" />
+   <pubDate>Tue, 14 Dec 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>12/07/10</title>
+   <enclosure url="http://www.mediafire.com/file/skhy8k134dffh1g/ar_ah_12-07-10.mp3" length="60153102" type="audio/mpeg3" />
+   <pubDate>Tue, 07 Dec 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/30/10</title>
+   <enclosure url="http://www.mediafire.com/file/sucbgqicu2j2c93/ar_ah_11-30-10.mp3" length="55991065" type="audio/mpeg3" />
+   <pubDate>Tue, 30 Nov 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/16/10</title>
+   <enclosure url="http://www.mediafire.com/file/pdypr73oejgo2at/ar_ah_11-16-10.mp3" length="62897422" type="audio/mpeg3" />
+   <pubDate>Tue, 16 Nov 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/09/10</title>
+   <enclosure url="http://www.mediafire.com/file/59x0m7taw6o1ryy/ar_ah_11-09-10.mp3" length="59644446" type="audio/mpeg3" />
+   <pubDate>Tue, 09 Nov 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>11/02/10</title>
+   <enclosure url="http://www.mediafire.com/file/bhajlhaq8hy8o2g/ar_ah_11-02-10.mp3" length="59295868" type="audio/mpeg3" />
+   <pubDate>Tue, 02 Nov 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/19/10</title>
+   <enclosure url="http://www.mediafire.com/file/abmy5qd4c1td4ld/ar_ah_10-19-10.mp3" length="58774673" type="audio/mpeg3" />
+   <pubDate>Tue, 19 Oct 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>10/12/10</title>
+   <description>Last weeks show (10/05/10) was not converted to MP3 format to go into iTunes. You can listen to last weeks show (10/05/10) online: http://bit.ly/AH-10-05-10</description>
+   <enclosure url="http://www.mediafire.com/file/9554l9iuivu9c7v/ar_ah_10-12-10.mp3" length="59926568" type="audio/mpeg3" />
+   <pubDate>Tue, 12 Oct 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/28/10</title>
+   <enclosure url="http://www.mediafire.com/file/c9tyv4hkwgxir89/ar_ah_09-28-10.mp3" length="59043003" type="audio/mpeg3" />
+   <pubDate>Tue, 28 Sep 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/21/10</title>
+   <enclosure url="http://www.mediafire.com/file/56wc6215t3kjbk6/ar_ah_09-21-10.mp3" length="61020786" type="audio/mpeg3" />
+   <pubDate>Tue, 21 Sep 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>09/14/10</title>
+   <enclosure url="http://www.mediafire.com/file/jgjqgu8jwoo51un/ar_ah_09-14-10.mp3" length="57810441" type="audio/mpeg3" />
+   <pubDate>Tue, 14 Sep 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/31/10</title>
+   <enclosure url="http://www.mediafire.com/file/o404w78zoebkoaq/ar_ah_08-31-10.mp3" length="59208932" type="audio/mpeg3" />
+   <pubDate>Tue, 31 Aug 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/24/10</title>
+   <enclosure url="http://www.mediafire.com/file/tdos804viip0qw1/ar_ah_08-24-10.mp3" length="60555597" type="audio/mpeg3" />
+   <pubDate>Tue, 24 Aug 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>08/03/10</title>
+   <enclosure url="http://www.mediafire.com/file/qs25y7dclqpz4bq/ar_ah_08-03-10.mp3" length="61918980" type="audio/mpeg3" />
+   <pubDate>Tue, 03 Aug 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/27/10</title>
+   <enclosure url="http://www.mediafire.com/file/9q8onoq8qt8olrj/ar_ah_07-27-10.mp3" length="62601089" type="audio/mpeg3" />
+   <pubDate>Tue, 27 Jul 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/20/10</title>
+   <enclosure url="http://www.mediafire.com/file/yrhqksslr1t1obr/ar_ah_07-20-10.mp3" length="59585514" type="audio/mpeg3" />
+   <pubDate>Tue, 20 Jul 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/13/10</title>
+   <enclosure url="http://www.mediafire.com/file/jqc6cxpqoqmlomr/ar_ah_07-13-10.mp3" length="58426095" type="audio/mpeg3" />
+   <pubDate>Tue, 13 Jul 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>07/06/10</title>
+   <enclosure url="http://www.mediafire.com/file/oyzynmtwdvj/ar_ah_07-06-10.mp3" length="60257592" type="audio/mpeg3" />
+   <pubDate>Tue, 6 Jul 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/29/10</title>
+   <enclosure url="http://www.mediafire.com/file/e3cjtjnyg2n/ar_ah_06-29-10.mp3" length="59783208" type="audio/mpeg3" />
+   <pubDate>Tue, 29 Jun 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>06/01/10</title>
+   <enclosure url="http://www.mediafire.com/file/uynqmtmt202/ar_ah_06-01-10.mp3" length="58514284" type="audio/mpeg3" />
+   <pubDate>Tue, 1 Jun 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/25/10</title>
+   <enclosure url="http://www.mediafire.com/file/y2mzwmhmhy0/ar_ah_05-25-10.mp3" length="59728038" type="audio/mpeg3" />
+   <pubDate>Tue, 25 May 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/18/10</title>
+   <enclosure url="http://www.mediafire.com/file/jzzqw1dtmt3/ar_ah_05-18-10.mp3" length="60258010" type="audio/mpeg3" />
+   <pubDate>Tue, 18 May 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/11/10</title>
+   <enclosure url="http://www.mediafire.com/file/4ffytnxjnw2/ar_ah_05-11-10.mp3" length="61723375" type="audio/mpeg3" />
+   <pubDate>Tue, 11 May 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>05/04/10</title>
+   <enclosure url="http://www.mediafire.com/file/lmrljkjtede/ar_ah_05-04-10.mp3" length="57843460" type="audio/mpeg3" />
+   <pubDate>Tue, 4 May 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/27/10</title>
+   <enclosure url="http://www.mediafire.com/file/deximnj2m2n/ar_ah_04-27-10.mp3" length="58595368" type="audio/mpeg3" />
+   <pubDate>Tue, 27 Apr 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/20/10</title>
+   <enclosure url="http://www.mediafire.com/file/nmjnommzmnj/ar_ah_04-20-10.mp3" length="62665455" type="audio/mpeg3" />
+   <pubDate>Tue, 20 Apr 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>04/06/10</title>
+   <enclosure url="http://www.mediafire.com/file/mimyzoz5kob/ar_ah_04-06-10.mp3" length="60581092" type="audio/mpeg3" />
+   <pubDate>Tue, 06 Apr 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/23/10</title>
+   <enclosure url="http://www.mediafire.com/file/zaqydqmymyz/ar_ah_03-23-10.mp3" length="60973556" type="audio/mpeg3" />
+   <pubDate>Tue, 23 Mar 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/16/10</title>
+   <enclosure url="http://www.mediafire.com/file/jdlk1mmjlue/ar_ah_03-16-10.mp3" length="60089154" type="audio/mpeg3" />
+   <pubDate>Tue, 16 Mar 2010 22:00:00 EDT</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/09/10</title>
+   <enclosure url="http://www.mediafire.com/file/d3m4mzg32ix/ar_ah_03-09-10.mp3" length="58253896" type="audio/mpeg3" />
+   <pubDate>Tue, 09 Mar 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>03/02/10</title>
+   <description>Angry Human Returns to Tuesday Evenings</description>
+   <enclosure url="http://www.mediafire.com/file/d1y2znjyf54/ar_ah_03-02-10.mp3" length="60240456" type="audio/mpeg3" />
+   <pubDate>Tue, 02 Mar 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+  <item>
+   <title>02/02/10</title>
+   <description>Angry Human Is Now in MP3 Format!</description>
+   <enclosure url="http://www.mediafire.com/file/mwqhvzg2jjw/ar_ah_02-02-10.mp3" length="123257834" type="audio/mpeg3" />
+   <pubDate>Tue, 02 Feb 2010 22:00:00 EST</pubDate>
+   <itunes:duration>01:00:00</itunes:duration>
+   <itunes:explicit>yes</itunes:explicit>
+  </item>
+ </channel>
+</rss>
