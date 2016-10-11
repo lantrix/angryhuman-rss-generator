@@ -1,4 +1,4 @@
-scheduledEvent = [{
+{
     "account": "123456789012",
     "region": "us-east-1",
     "detail": {},
@@ -9,4 +9,4 @@ scheduledEvent = [{
     "resources": [
     	"arn:aws:events:us-east-1:123456789012:rule/my-schedule"
     ]
-}]
+}

@@ -10,11 +10,19 @@ functions:
   generaterss:
     handler: handler.generaterss
     events:
-      - schedule: rate(3 mins)
+      - schedule: rate(1 hour)
 
 resources:
   Resources:
     DataBucket:
       Type: AWS::S3::Bucket
-				Properties:
-					BucketName: angryhumanrss
+      Properties:
+        BucketName: angryhumanrss
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: error.html
+  Outputs:
+    WebsiteURL:
+      Value: { "Fn::GetAtt" : [ "DataBucket", "WebsiteURL" ] }
+      Description: URL for the website hosted on S3
