@@ -37,7 +37,7 @@ Date.prototype.getSecondsFormatted = function() {
 var config = yaml_config.load(__dirname + "/config.yml");
 
 // Entrypoint for AWS Lambda
-module.exports.generaterss = function() {
+module.exports.generaterss = function(event, context, callback) {
 	"use strict";
 	// AWS Setup
 	const s3 = bbpromise.promisifyAll(new aws.S3());
@@ -144,6 +144,8 @@ module.exports.generaterss = function() {
 			ContentType: "application/xml"
 		};
 		return s3.putObjectAsync(params);
+	}).then(function() {
+		callback(null, "Published XML");
 	})
 	.catch(SyntaxError, function(e) {
 		console.log("Error: ", e);
