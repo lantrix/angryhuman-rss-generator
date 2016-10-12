@@ -140,6 +140,7 @@ module.exports.generaterss = function() {
 			Bucket: config.bucket,
 			Key: config.rssKey,
 			Body: new Buffer(xml),
+			ACL: "public-read",
 			ContentType: "application/xml"
 		};
 		return s3.putObjectAsync(params);
