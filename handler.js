@@ -8,6 +8,8 @@ const aws = require("aws-sdk");
 
 // Require Logic
 var lib = require("./lib/rss.js");
+
+//Prototype constructors for custom methods for formatting GUID timestrings for RSS feed
 Date.prototype.getMonthFormatted = function() {
 	var month = this.getMonth() + 1;
 	return month < 10 ? "0" + month : "" + month; // ("" + month) for string result
@@ -15,6 +17,18 @@ Date.prototype.getMonthFormatted = function() {
 Date.prototype.getDayFormatted = function() {
 	var day = this.getDate();
 	return day < 10 ? "0" + day : "" + day; // ("" + day) for string result
+};
+Date.prototype.getUTCHoursFormatted = function() {
+	var hours = this.getUTCHours();
+	return hours < 10 ? "0" + hours : "" + hours; // ("" + hours) for string result
+};
+Date.prototype.getMinutesFormatted = function() {
+	var minutes = this.getMinutes();
+	return minutes < 10 ? "0" + minutes : "" + minutes; // ("" + minutes) for string result
+};
+Date.prototype.getSecondsFormatted = function() {
+	var seconds = this.getSeconds();
+	return seconds < 10 ? "0" + seconds : "" + seconds; // ("" + seconds) for string result
 };
 
 // App setup
@@ -63,11 +77,11 @@ module.exports.generaterss = function() {
 				var date = new Date(newRssItem.pubDate);
 				//example: "AngryHuman-2012-06-19-22-00-00"
 				newRssItem.guid = "AngryHuman-" + date.getFullYear()
-						+ "-" + date.getMonthFormatted()
-						+ "-" + date.getDayFormatted()
-						+ "-" + date.getUTCHours()
-						+ "-" + date.getMinutes()
-						+ "-" + date.getSeconds();
+					+ "-" + date.getMonthFormatted()
+					+ "-" + date.getDayFormatted()
+					+ "-" + date.getUTCHoursFormatted()
+					+ "-" + date.getMinutesFormatted()
+					+ "-" + date.getSecondsFormatted();
 				// console.log(newRssItem.pubDate);
 				// console.log(newRssItem.guid);
 			}
@@ -75,7 +89,7 @@ module.exports.generaterss = function() {
 			rssData.forEach(function(existingRssItem) {
 				// Iterate through all the existing RSS entries from our source data
 				if (existingRssItem.guid == newRssItem.guid) {
-					// See if entry afrom sourceRss lready exists in rssData if so skip
+					// See if entry from sourceRss already exists in rssData if so skip
 					skip = true;
 				}
 			});
