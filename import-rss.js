@@ -4,21 +4,20 @@
 const parser = require("rss-parser");
 const aws = require("aws-sdk");
 const s3 = new aws.S3();
+const yaml_config = require("node-yaml-config");
 
-const s3BucketName = "angryhumanrss";
-const region = "us-east-1";
-const dataFile = "data/rssdata";
-var sourceRss = "data/angryhuman-archive.xml";
+var config = yaml_config.load(__dirname + "/config.yml");
+var sourceRss = "data/angryhuman-archive.xml"; // Baseline XML of live podcasts - used to populate S3 data of RSS items
 
 parser.parseFile(sourceRss, function(err, parsed) {
 	console.log("Feed Title " + parsed.feed.title);
 	parsed.feed.entries.forEach(function(entry) {
 		console.log(entry.title + ":" + entry.link);
 	});
-	aws.config.region = region;
+	aws.config.region = config.region;
 	var params = {
-		Bucket: s3BucketName,
-		Key: dataFile,
+		Bucket: config.bucket,
+		Key: config.dataKey,
 		Body: JSON.stringify(parsed.feed.entries),
 		ContentType: "application/json"
 	};

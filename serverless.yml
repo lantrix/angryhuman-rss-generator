@@ -4,24 +4,41 @@ service: angryhuman-rss-generator
 
 provider:
   name: aws
+  stage: dev
+  region: ${file(./config.yml):region}
   runtime: nodejs4.3
+  memorySize: 128
+  iamRoleStatements:
+      -  Effect: "Allow"
+         Action:
+           - "s3:ListBucket"
+         Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "DataBucket"} ]] }
+      -  Effect: "Allow"
+         Action:
+           - "s3:PutObject"
+           - "s3:GetObject"
+         Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "DataBucket"} ]] }
+
+custom:
+  myStage: ${opt:stage, self:provider.stage}
 
 functions:
   generaterss:
+    name: ${self:custom.myStage}-generaterss
+    description: Generates RSS feed for angry human podcast in ${self:custom.myStage}
     handler: handler.generaterss
     events:
-      - schedule: rate(1 hour)
+      - schedule: ${file(./config.yml):globalSchedule}
 
 resources:
   Resources:
     DataBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: angryhumanrss
+        BucketName: ${file(./config.yml):bucket}
         AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
-          ErrorDocument: error.html
   Outputs:
     WebsiteURL:
       Value: { "Fn::GetAtt" : [ "DataBucket", "WebsiteURL" ] }

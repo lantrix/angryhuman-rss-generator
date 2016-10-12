@@ -30,6 +30,7 @@
     "rss-parser": "*",
     "rss": "*",
     "bluebird": "*",
-    "aws-sdk": "*"
+    "aws-sdk": "*",
+    "node-yaml-config": "*"
   }
 }

@@ -1,0 +1,13 @@
+# Serverless.yml config
+globalSchedule: rate(1 hour)
+bucket: angryhumanrss
+region: us-east-1
+
+# Handler runtime config set
+default:
+  sourceRssUri: http://www.mediafire.com/rss.php?key=jyk6j7ogc076r
+  bucket: angryhumanrss
+  region: us-east-1
+  dataKey: data/rssdata
+  dataOutKey: data/rssdata-out
+  rssKey: angryhuman.xml

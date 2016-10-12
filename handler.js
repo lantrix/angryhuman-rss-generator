@@ -5,6 +5,8 @@
 const bbpromise = require("bluebird");
 const parser = bbpromise.promisify(require("rss-parser").parseURL);
 const aws = require("aws-sdk");
+const yaml_config = require("node-yaml-config");
+
 
 // Require Logic
 var lib = require("./lib/rss.js");
@@ -31,27 +33,28 @@ Date.prototype.getSecondsFormatted = function() {
 	return seconds < 10 ? "0" + seconds : "" + seconds; // ("" + seconds) for string result
 };
 
-// App setup
-const sourceRssUri = "http://www.mediafire.com/rss.php?key=jyk6j7ogc076r";
-const s3BucketName = "angryhumanrss";
-const region = "us-east-1";
-const dataFile = "data/rssdata";
-const dataOutFile = "data/rssdata-out";
-const rssFeed = "angryhuman.xml";
+// Load app config
+var config = yaml_config.load(__dirname + "/config.yml");
 
 // Entrypoint for AWS Lambda
 module.exports.generaterss = function() {
 	"use strict";
 	// AWS Setup
 	const s3 = bbpromise.promisifyAll(new aws.S3());
-	aws.config.region = region;
+	aws.config.region = config.region;
 
 	// Retrieve Source RSS promise
-	var sourceRss = parser(sourceRssUri);
+	var sourceRss = parser(config.sourceRssUri).catch(SyntaxError, function(e) {
+		console.log("Error: ", e);
+	})
+	.catch(function(e) {
+		console.log("Catch: ", e);
+	});
 
-	var params = { Bucket: s3BucketName };
+	// Retrieve RSS data from S3 promise
+	var params = { Bucket: config.bucket };
 	var s3Data = s3.headBucketAsync(params).then(function() {
-		var params = { Bucket: s3BucketName, Key: dataFile };
+		var params = { Bucket: config.bucket, Key: config.dataKey };
 		return s3.getObjectAsync(params);
 	}).then(function(data) {
 		return JSON.parse(new Buffer(data.Body).toString("utf8"));
@@ -59,14 +62,13 @@ module.exports.generaterss = function() {
 		console.log("Error: ", e);
 	})
 	.catch(function(e) {
-		//Catch any other error
 		console.log("Catch: ", e);
 	});
 
 	// Chained retrieval promises - wait for them both
 	bbpromise.all([sourceRss, s3Data]).then(function(result) {
-		//result is an array contains the objects of the fulfilled promises.
 		let itemsToAdd = [];
+		//result is an array contains the objects of the fulfilled promises.
 		const sourceRss = result[0];
 		const rssData = result[1];
 
@@ -125,8 +127,8 @@ module.exports.generaterss = function() {
 	}).then(function(feed) {
 		// Save out RSS Data - testing to alt file
 		var params = {
-			Bucket: s3BucketName,
-			Key: dataOutFile,
+			Bucket: config.bucket,
+			Key: config.dataOutKey,
 			Body: JSON.stringify(feed.entries),
 			ContentType: "application/json"
 		};
@@ -135,8 +137,8 @@ module.exports.generaterss = function() {
 	}).then(function(feed) {
 		let xml = feed.xml({indent: true});
 		var params = { 
-			Bucket: s3BucketName,
-			Key: rssFeed,
+			Bucket: config.bucket,
+			Key: config.rssKey,
 			Body: new Buffer(xml),
 			ContentType: "application/xml"
 		};
@@ -146,7 +148,6 @@ module.exports.generaterss = function() {
 		console.log("Error: ", e);
 	})
 	.catch(function(e) {
-		//Catch any other error
 		console.log("Catch: ", e);
 	});
 };
