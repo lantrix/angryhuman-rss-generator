@@ -39,7 +39,7 @@ default:
 | **Step** | **Command** |**Description**|
 |---|-------|------|
 |  1.  | `serverless deploy -v` | Deploy to your AWS account  |
-|  2.  | `serverless invoke --function generaterss` | Run the function we just deployed  |
+|  2.  | `serverless invoke --function generaterss -p event.json` | Run the function we just deployed  |
 
 ### Find out published XML URI
 

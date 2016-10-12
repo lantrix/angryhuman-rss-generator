@@ -17,7 +17,7 @@ provider:
          Action:
            - "s3:PutObject"
            - "s3:GetObject"
-         Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "DataBucket"} ]] }
+         Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "DataBucket"}, "/*" ]] }
 
 custom:
   myStage: ${opt:stage, self:provider.stage}
