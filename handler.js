@@ -20,8 +20,8 @@ Date.prototype.getDayFormatted = function() {
 	var day = this.getDate();
 	return day < 10 ? "0" + day : "" + day; // ("" + day) for string result
 };
-Date.prototype.getUTCHoursFormatted = function() {
-	var hours = this.getUTCHours();
+Date.prototype.getHoursFormatted = function() {
+	var hours = this.getHours();
 	return hours < 10 ? "0" + hours : "" + hours; // ("" + hours) for string result
 };
 Date.prototype.getMinutesFormatted = function() {
@@ -81,17 +81,24 @@ module.exports.generaterss = function(event, context, callback) {
 				newRssItem.guid = "AngryHuman-" + date.getFullYear()
 					+ "-" + date.getMonthFormatted()
 					+ "-" + date.getDayFormatted()
-					+ "-" + date.getUTCHoursFormatted()
+					+ "-" + date.getHoursFormatted()
 					+ "-" + date.getMinutesFormatted()
 					+ "-" + date.getSecondsFormatted();
 				// console.log(newRssItem.pubDate);
 				// console.log(newRssItem.guid);
+				// TODO: set title to date e.g. "07/29/15" - extract from filename which is consistent
+				// easiest way to match as the published dates of old are hardocded by hand to
+				// 22:00 on the airing date, but published dates of new are from mediafire uploaded timestrings
 			}
 			let skip = false;
 			rssData.forEach(function(existingRssItem) {
 				// Iterate through all the existing RSS entries from our source data
 				if (existingRssItem.guid == newRssItem.guid) {
-					// See if entry from sourceRss already exists in rssData if so skip
+					// Entry from sourceRss already exists in rssData if so skip - GUID match
+					skip = true;
+				}
+				if (existingRssItem.title == newRssItem.title) {
+					// Entry from sourceRss already exists in rssData if so skip - Title match
 					skip = true;
 				}
 			});
