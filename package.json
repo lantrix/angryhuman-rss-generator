@@ -23,15 +23,18 @@
     "aws-lambda-mock-context": "*",
     "aws-sdk-mock": "^1.5.0",
     "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "jsonfile": "^2.4.0",
     "mocha": "^3.0.2",
+    "mock-aws": "^1.2.3",
     "tape": "^4.6.0"
   },
   "dependencies": {
-    "rss-parser": "*",
-    "rss": "*",
-    "bluebird": "*",
     "aws-sdk": "*",
-    "node-yaml-config": "*"
+    "bluebird": "*",
+    "node-yaml-config": "*",
+    "request": "^2.75.0",
+    "rss": "*",
+    "rss-parser": "*"
   }
 }

@@ -4,9 +4,7 @@
 
 const bbpromise = require("bluebird");
 const parser = bbpromise.promisify(require("rss-parser").parseURL);
-const aws = require("aws-sdk");
 const yaml_config = require("node-yaml-config");
-
 
 // Require Logic
 var lib = require("./lib/rss.js");
@@ -40,8 +38,9 @@ var config = yaml_config.load(__dirname + "/config.yml");
 module.exports.generaterss = function(event, context, callback) {
 	"use strict";
 	// AWS Setup
-	const s3 = bbpromise.promisifyAll(new aws.S3());
-	aws.config.region = config.region;
+	const aws = require("aws-sdk");
+	const s3 = bbpromise.promisifyAll(new aws.S3({}));
+	s3.config.region = config.region;
 
 	// Retrieve Source RSS promise
 	var sourceRss = parser(config.sourceRssUri).catch(SyntaxError, function(e) {
@@ -74,6 +73,17 @@ module.exports.generaterss = function(event, context, callback) {
 
 		sourceRss.feed.entries.forEach(function(newRssItem) {
 			// Iterate through all the new RSS entries
+			let skip = false;
+			var options = {
+				url: newRssItem.link,
+				// url: "http://localhost/",
+				followRedirect: "false"
+			};
+			console.log(newRssItem.pubDate);
+			let x = lib.getFinalUri(options, function(uri){
+				return;
+			});
+			console.log(x);
 			if ( newRssItem.guid !== null ) {
 				// console.log("Create New Guid");
 				var date = new Date(newRssItem.pubDate);
@@ -90,7 +100,7 @@ module.exports.generaterss = function(event, context, callback) {
 				// easiest way to match as the published dates of old are hardocded by hand to
 				// 22:00 on the airing date, but published dates of new are from mediafire uploaded timestrings
 			}
-			let skip = false;
+
 			rssData.forEach(function(existingRssItem) {
 				// Iterate through all the existing RSS entries from our source data
 				if (existingRssItem.guid == newRssItem.guid) {
